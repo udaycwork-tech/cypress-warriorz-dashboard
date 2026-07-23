@@ -89,7 +89,7 @@ st.markdown(f"""
 st.markdown(f'''
 <div class="hero-section">
     <p class="main-header">Cypress Warriorz Analytics Hub</p>
-    <p class="sub-header">Data-Driven Excellence on the Court</p>
+    <p class="sub-header">Data-Driven Excellence on the Field</p>
 </div>
 ''', unsafe_allow_html=True)
 
