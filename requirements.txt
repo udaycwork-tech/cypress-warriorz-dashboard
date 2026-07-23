@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+plotly
+joblib
+torch
+scipy
+scikit-learn
+snowflake-connector-python
