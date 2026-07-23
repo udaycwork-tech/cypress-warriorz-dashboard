@@ -3,7 +3,7 @@ import streamlit as st
 # Configure the main page settings
 st.set_page_config(
     page_title="Cypress Warriorz | Analytics Hub",
-    page_icon="🏏",
+    page_icon="🏀",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -13,7 +13,7 @@ st.markdown("""
 <style>
     .main-header {
         font-size: 3.5rem;
-        color: #1E3A8A; /* Deep Blue */
+        color: #D4AF37; /* Warriorz Gold */
         text-align: center;
         font-weight: 800;
         margin-bottom: 0px;
@@ -21,29 +21,34 @@ st.markdown("""
     }
     .sub-header {
         font-size: 1.5rem;
-        color: #64748B; /* Slate Gray */
+        color: #A3A3A3; /* Light Gray for contrast */
         text-align: center;
         margin-top: -10px;
         margin-bottom: 40px;
         font-weight: 400;
     }
     .feature-card {
-        background-color: #FFFFFF;
+        background-color: #1A1A1A; /* Sleek Dark/Black Background */
         padding: 25px;
         border-radius: 12px;
-        border-left: 6px solid #1E3A8A;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-left: 6px solid #D4AF37; /* Warriorz Gold Accent */
+        box-shadow: 0 4px 6px -1px rgba(212, 175, 55, 0.15), 0 2px 4px -1px rgba(212, 175, 55, 0.1); /* Subtle gold glow */
         height: 100%;
+        color: #E0E0E0; /* Explicitly setting text color so it never goes invisible */
+    }
+    .feature-card p, .feature-card ul {
+        color: #E0E0E0; /* Ensuring lists and paragraphs are readable */
     }
     .feature-title {
-        color: #0F172A;
+        color: #D4AF37; /* Warriorz Gold */
         font-size: 1.25rem;
         font-weight: 700;
         margin-bottom: 15px;
     }
     .highlight-text {
-        color: #2563EB;
-        font-weight: 600;
+        color: #FFFFFF; /* Pure White for popping contrast */
+        font-weight: 700;
+        border-bottom: 1px solid #D4AF37; /* Little gold underline */
     }
 </style>
 """, unsafe_allow_html=True)
