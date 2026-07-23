@@ -16,6 +16,7 @@ Designed with a sleek, dark-mode Gold and Black UI, the application provides an 
 *   **Machine Learning:** Scikit-Learn (Random Forests), PyTorch
 *   **Data Processing & ETL:** Python, Pandas, NumPy, RegEx
 *   **Model Serialization:** Joblib
+*   **Business Intelligence:** Power BI
 
 ---
 
