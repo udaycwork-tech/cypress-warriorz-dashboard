@@ -5,7 +5,7 @@ import os
 # Configure the main page settings
 st.set_page_config(
     page_title="Cypress Warriorz | Analytics Hub",
-    page_icon="🏀",
+    page_icon="🏏",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -59,7 +59,7 @@ st.markdown(f"""
         font-weight: 600;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
     }}
-    .feature-card {
+    .feature-card {{
         background-color: #1A1A1A; /* Sleek Dark/Black Background */
         padding: 25px;
         border-radius: 12px;
@@ -67,21 +67,21 @@ st.markdown(f"""
         box-shadow: 0 4px 6px -1px rgba(212, 175, 55, 0.15), 0 2px 4px -1px rgba(212, 175, 55, 0.1); /* Subtle gold glow */
         height: 100%;
         color: #E0E0E0; /* Explicitly setting text color so it never goes invisible */
-    }
-    .feature-card p, .feature-card ul {
+    }}
+    .feature-card p, .feature-card ul {{
         color: #E0E0E0; /* Ensuring lists and paragraphs are readable */
-    }
-    .feature-title {
+    }}
+    .feature-title {{
         color: #D4AF37; /* Warriorz Gold */
         font-size: 1.25rem;
         font-weight: 700;
         margin-bottom: 15px;
-    }
-    .highlight-text {
+    }}
+    .highlight-text {{
         color: #FFFFFF; /* Pure White for popping contrast */
         font-weight: 700;
         border-bottom: 1px solid #D4AF37; /* Little gold underline */
-    }
+    }}
 </style>
 """, unsafe_allow_html=True)
 
