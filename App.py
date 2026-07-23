@@ -1,4 +1,6 @@
 import streamlit as st
+import base64
+import os
 
 # Configure the main page settings
 st.set_page_config(
@@ -8,25 +10,55 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Function to get base64 image so we can embed it securely into the CSS
+def get_base64_of_bin_file(bin_file):
+    if os.path.exists(bin_file):
+        with open(bin_file, 'rb') as f:
+            data = f.read()
+        return base64.b64encode(data).decode()
+    return ""
+
+# Read the local image file you referenced
+img_base64 = get_base64_of_bin_file("image_4b1e47.jpg")
+bg_style = f"background-image: url('data:image/jpeg;base64,{img_base64}');" if img_base64 else "background-color: #1A1A1A;"
+
 # Custom CSS to inject a modern, visually appealing UI
-st.markdown("""
+st.markdown(f"""
 <style>
-    .main-header {
-        font-size: 3.5rem;
-        color: #D4AF37; /* Warriorz Gold */
+    /* Force Times New Roman for the entire page body */
+    html, body, [class*="css"], p, li, div, h1, h2, h3, h4, h5, h6 {{
+        font-family: 'Times New Roman', Times, serif !important;
+    }}
+    
+    .hero-section {{
+        {bg_style}
+        background-size: cover;
+        background-position: center;
+        padding: 80px 20px;
+        border-radius: 15px;
         text-align: center;
-        font-weight: 800;
-        margin-bottom: 0px;
-        padding-top: 20px;
-    }
-    .sub-header {
-        font-size: 1.5rem;
-        color: #A3A3A3; /* Light Gray for contrast */
-        text-align: center;
-        margin-top: -10px;
         margin-bottom: 40px;
-        font-weight: 400;
-    }
+        /* Dark transparent overlay so the gold text is readable over the bright image */
+        box-shadow: inset 0 0 0 2000px rgba(15, 15, 15, 0.75);
+        border: 2px solid #D4AF37;
+    }}
+    
+    .main-header {{
+        font-size: 5rem !important; /* Significantly larger */
+        color: #D4AF37 !important; /* Warriorz Gold */
+        font-family: 'Arial Black', Impact, sans-serif !important; /* Sleek, bold athletic font */
+        font-weight: 900;
+        margin-bottom: 0px;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.9); /* Heavy drop shadow for contrast */
+        line-height: 1.1;
+    }}
+    .sub-header {{
+        font-size: 1.8rem !important;
+        color: #E0E0E0 !important;
+        margin-top: 15px;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+    }}
     .feature-card {
         background-color: #1A1A1A; /* Sleek Dark/Black Background */
         padding: 25px;
@@ -53,9 +85,13 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Headers
-st.markdown('<p class="main-header">Cypress Warriorz Analytics Hub</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">Data-Driven Excellence on the Court</p>', unsafe_allow_html=True)
+# Headers - Wrapped in the new hero-section div
+st.markdown(f'''
+<div class="hero-section">
+    <p class="main-header">Cypress Warriorz Analytics Hub</p>
+    <p class="sub-header">Data-Driven Excellence on the Court</p>
+</div>
+''', unsafe_allow_html=True)
 
 st.divider()
 
