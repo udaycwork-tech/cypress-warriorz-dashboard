@@ -1,0 +1,136 @@
+PLAYER_ID,PLAYER_NAME,IS_ACTIVE_BTHCC,IS_ACTIVE_ADGO,IS_ACTIVE,IS_PRACTICE_LEAGUE,FIELDING_ALIAS
+1,Aarnav Patel,True,False,True,False,Aarnav P
+2,Abu Siddiq,True,False,True,True,Abu S
+3,Aditya Dade,True,False,True,True,Aditya D
+4,Aijaz Chaudary,True,False,True,False,Aijaz C
+5,Akshat Desai,False,False,False,False,Akshat D
+6,Amit Rathod,False,False,False,False,Amit R
+7,Aneesh Vr,False,False,False,False,Aneesh V
+8,Anil Matam,False,False,False,False,Anil M
+9,Archit Shah,True,True,True,False,Archit S
+10,Arnav Chande,False,False,False,False,Arnav C
+11,Arun Anthony,True,True,True,True,Arun A
+12,Arun Ramesh Vadegora,False,False,False,False,Arun Ramesh V
+13,Aryan Gandhi,False,False,False,False,Aryan G
+14,Asha Kiran Poojari,True,False,True,False,Asha Kiran P
+15,Avinash Guduru,False,False,False,False,Avinash G
+16,Avinash Naidu,False,False,False,False,Avinash N
+17,Avinash Peterraj,True,True,True,False,Avinash P
+18,Azhar Mohammed,False,False,False,False,Azhar M
+19,Balaram Krishna,False,False,False,False,Balaram K
+20,Bernard Seimon,True,True,True,False,Bernard S
+21,Bibin Baby,False,False,False,False,Bibin B
+22,Bilal Iqbal,False,False,False,False,Bilal I
+23,Bilal Tawakkal,False,False,False,False,Bilal T
+24,Brock Knapton,False,False,False,False,Brock K
+25,Charles Ethan Gaitz,True,True,True,True,Charles Ethan G
+26,Chirag Gandhi,False,False,False,False,Chirag G
+27,Dev Patel,True,False,True,False,Dev P
+28,Dishan Wanigabaduge,False,False,False,False,Dishan W
+29,Emilio Serralde,True,False,True,True,Emilio S
+30,Gagan Nayakwadi,False,False,False,False,Gagan N
+31,Garv Chaudhary,True,True,True,True,Garv C
+32,Gaurav Mogane,False,False,False,False,Gaurav M
+33,Geroge Issac,True,False,True,False,Geroge I
+34,Gohar Ali,False,False,False,False,Gohar A
+35,Goutham Chilumula,False,True,True,True,Goutham C
+36,Govardhan Kandula,False,False,False,False,Govardhan K
+37,Gunjan Shukla,False,False,False,False,Gunjan S
+38,Hamza Qureshi,False,False,False,True,Hamza Q
+39,Harish Bukia,True,False,True,False,Harish B
+40,Harish Pugalenthi,True,False,True,True,Harish P
+41,Harsha Teja,False,False,False,False,Harsha T
+42,Ishira Mihiran,True,False,True,False,Ishira M
+43,Jagdish Prajapati,False,False,False,False,Jagdish P
+44,Jagvir Singh,True,False,True,False,Jagvir S
+45,Janith Ilangasiri,True,False,True,False,Janith I
+46,Jay Mavani,False,False,False,False,Jay M
+47,Jeeva Chinnusamy,True,True,True,False,Jeeva C
+48,Jordaine Hunter,False,False,False,False,Jordaine H
+49,Justin Thomas,False,False,False,False,Justin T
+50,Karan Patel,True,True,True,False,Karan P
+51,Karthik Varma,False,False,False,False,Karthik V
+52,Kavindu Perera,True,False,True,False,Kavindu P
+53,Keith Cornelius,False,False,False,False,Keith C
+54,Kiran Muppala,True,True,True,False,Kiran M
+55,Kiran Teja Sriperumbuduri,False,True,True,False,Kiran Teja S
+56,Krrish Patel,False,False,False,False,Krrish P
+57,Kusal Fernando,True,False,True,False,Kusal F
+58,Lakshman Garikapati,False,True,True,False,Lakshman G
+59,Leyeesh Senthamilselvan,False,False,False,True,Leyeesh S
+60,Magic Mahesh,False,True,True,False,Magic M
+61,Mahesh Amarawansha,False,False,False,False,Mahesh A
+62,Manjinder Singh,True,False,True,False,Manjinder S
+63,Mark Sagayababu,False,False,False,False,Mark S
+64,Maurya Shah,False,False,False,False,Maurya S
+65,Miyushan Jeewantha,False,False,False,False,Miyushan J
+66,Mukeshkannan Dhanasekar,False,False,False,True,Mukeshkannan D
+67,Nagul Sharif Shaik,False,True,True,False,Nagul Sharif S
+68,Nalith Perera,True,True,True,False,Nalith P
+69,Nasar Vali Shaik,False,True,True,False,Nasar Vali S
+70,Naveen C Vemula,False,True,True,False,Naveen C V
+71,Neil Martin,False,False,False,False,Neil M
+72,Niranjan Kattalagiri,False,False,False,False,Niranjan K
+73,Nishant Padhiar,True,False,True,True,Nishant P
+74,Nishanth Muthu,True,True,True,True,Nishanth M
+75,Nitesh Kosuri,False,False,False,True,Nitesh K
+76,Noel George,False,False,False,True,Noel G
+77,Ojas Bhatia,True,True,True,False,Ojas B
+78,Pavan Nimmagadda,False,False,False,True,Pavan N
+79,Pervinder Singh Gulati,False,False,False,False,Pervinder Singh G
+80,Pj Gluk,False,False,False,False,Pj G
+81,Pranav Reddy,False,True,True,False,Pranav R
+82,Pratyush Vyas,True,True,True,True,Pratyush V
+83,Pubudu Pathirana,True,False,True,False,Pubudu P
+84,Rahul Reddy,False,False,False,False,Rahul R
+85,Rajesh Nadipalli,False,False,False,False,Rajesh N
+86,Rajesh Pant,False,True,True,False,Rajesh P
+87,Rakesh Kumar,False,False,False,False,Rakesh K
+88,Ravi Kishore Bobburi,False,False,False,False,Ravi Kishore B
+89,Rayyan Hasan,False,False,False,False,Rayyan H
+90,Rishabh Vyas,True,True,True,True,Rishabh V
+91,Rohan Dhawan,False,False,False,False,Rohan D
+92,Rohan Nayakwadi,False,False,False,True,Rohan N
+93,Roshaka Rajapaksha,True,True,True,False,Roshaka R
+94,Rushang Shah,True,True,True,False,Rushang S
+95,Saad A Khan,False,False,False,False,Saad A K
+96,Saad Masood,True,False,True,False,Saad M
+97,Saahith Matam,False,False,False,False,Saahith M
+98,Sadesh Chandana,False,False,False,False,Sadesh C
+99,Sai Kiran Kollarapu,False,False,False,False,Sai Kiran K
+100,Santhakumar Ravichandran,False,False,False,False,Santhakumar R
+101,Shahid Khan,False,False,False,False,Shahid K
+102,Shahzad Ahmed,False,False,False,True,Shahzad A
+103,Shail Patel,True,True,True,False,Shail P
+104,Shashivardhan Reddy Rentala,False,False,False,False,Shashivardhan Reddy R
+105,Shayaan Saad,False,False,False,True,Shayaan S
+106,Sherwin Mathew,False,False,False,True,Sherwin M
+107,Shirak Pujitha,False,False,False,False,Shirak P
+108,Shiva Prasad,False,False,False,False,Shiva P
+109,Shiva Reddy Baddam,False,False,False,False,Shiva Reddy B
+110,Shreyan Satheesh,False,False,False,False,Shreyan S
+111,Sid Aphale,False,False,False,False,Sid A
+112,Sisindu Liyange,True,False,True,False,Sisindu L
+113,Sohan Matam,True,False,True,True,Sohan M
+114,Sreekanth Katanguri,False,False,False,True,Sreekanth K
+115,Sri Ranga Reddy Muddasani,False,False,False,True,Sri Ranga Reddy M
+116,Srinivasarao Kandubothula (srk),False,False,False,False,Srinivasarao Kandubothula (
+117,Sriram Ranganathan,False,False,False,False,Sriram R
+118,Srujan Shukla,False,False,False,False,Srujan S
+119,Subramanya Upadhya,True,True,True,False,Subramanya U
+120,Suchethan Mayur Srinath,False,False,False,True,Suchethan Mayur S
+121,Sukitha Pallimulla,True,False,True,False,Sukitha P
+122,Sunil Patel,False,False,False,False,Sunil P
+123,Suriya Balaji,False,False,False,True,Suriya B
+124,Sutheshan Mayur Srinath,False,False,False,False,Sutheshan Mayur S
+125,Swapnil Chandratre,False,False,False,False,Swapnil C
+126,Tanmay Shah,True,False,True,False,Tanmay S
+127,Thisara Ishan,True,False,True,False,Thisara I
+128,Thisara Weerasekara,False,False,False,False,Thisara W
+129,Uday Chaudhary,True,True,True,True,Uday C
+130,UdayKrishna Narayanan,True,False,True,False,UdayKrishna N
+131,Udesh Jayasuriya,True,False,True,False,Udesh J
+132,Vamsi Kommalapati,False,True,True,False,Vamsi K
+133,Vishnu Gardimalla,False,False,False,False,Vishnu G
+134,Viswatej Mudigonda,False,False,False,False,Viswatej M
+135,Vivek Bhatia,False,False,False,False,Vivek B

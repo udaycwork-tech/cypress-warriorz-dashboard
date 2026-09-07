@@ -1,14 +1,12 @@
 import streamlit as st
 
-# Configure the main page settings
 st.set_page_config(
     page_title="Cypress Warriorz | Analytics Hub",
-    page_icon="🏀",
+    page_icon="🏏",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS to inject a modern, visually appealing UI
 st.markdown("""
 <style>
     .main-header {
@@ -21,55 +19,52 @@ st.markdown("""
     }
     .sub-header {
         font-size: 1.5rem;
-        color: #A3A3A3; /* Light Gray for contrast */
+        color: #A3A3A3;
         text-align: center;
         margin-top: -10px;
         margin-bottom: 40px;
         font-weight: 400;
     }
     .feature-card {
-        background-color: #1A1A1A; /* Sleek Dark/Black Background */
+        background-color: #1A1A1A;
         padding: 25px;
         border-radius: 12px;
-        border-left: 6px solid #D4AF37; /* Warriorz Gold Accent */
-        box-shadow: 0 4px 6px -1px rgba(212, 175, 55, 0.15), 0 2px 4px -1px rgba(212, 175, 55, 0.1); /* Subtle gold glow */
+        border-left: 6px solid #D4AF37;
+        box-shadow: 0 4px 6px -1px rgba(212, 175, 55, 0.15), 0 2px 4px -1px rgba(212, 175, 55, 0.1);
         height: 100%;
-        color: #E0E0E0; /* Explicitly setting text color so it never goes invisible */
+        color: #E0E0E0;
     }
     .feature-card p, .feature-card ul {
-        color: #E0E0E0; /* Ensuring lists and paragraphs are readable */
+        color: #E0E0E0;
     }
     .feature-title {
-        color: #D4AF37; /* Warriorz Gold */
+        color: #D4AF37;
         font-size: 1.25rem;
         font-weight: 700;
         margin-bottom: 15px;
     }
     .highlight-text {
-        color: #FFFFFF; /* Pure White for popping contrast */
+        color: #FFFFFF;
         font-weight: 700;
-        border-bottom: 1px solid #D4AF37; /* Little gold underline */
+        border-bottom: 1px solid #D4AF37;
     }
 </style>
 """, unsafe_allow_html=True)
 
-# Headers
 st.markdown('<p class="main-header">Cypress Warriorz Analytics Hub</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">Data-Driven Excellence on the Court</p>', unsafe_allow_html=True)
+st.markdown('<p class="sub-header">Data-Driven Excellence on the Pitch</p>', unsafe_allow_html=True)
 
 st.divider()
 
-# Intro Text
 st.markdown("### Welcome to the Command Center")
 st.write(
-    "This portal connects directly to our secure Snowflake data warehouse, delivering real-time "
+    "This portal connects directly to our secure Neon PostgreSQL cloud data warehouse, delivering real-time "
     "insights and predictive modeling to give the Cypress Warriorz a competitive edge. "
     "Use the sidebar on the left to navigate through our intelligence modules."
 )
 
-st.write("") # Spacer
+st.write("") 
 
-# Create two columns for the feature cards
 col1, col2 = st.columns(2)
 
 with col1:
@@ -78,9 +73,9 @@ with col1:
         <div class="feature-title">📊 Player Analysis Module</div>
         <p>Dive deep into historical performance with dynamic, interactive data visualizations. This page allows you to:</p>
         <ul>
-            <li><span class="highlight-text">Track Historical Trends:</span> Monitor how player stats fluctuate across games and entire seasons.</li>
-            <li><span class="highlight-text">Comparative Metrics:</span> Instantly see how individual athletes stack up against team averages and baseline benchmarks.</li>
-            <li><span class="highlight-text">Strategic Indicators:</span> Visualize scoring efficiency, defensive impact, and advanced metrics to optimize playtime and game-day strategy.</li>
+            <li><span class="highlight-text">Track Historical Trends:</span> Monitor how player stats fluctuate across games and seasons.</li>
+            <li><span class="highlight-text">Comparative Metrics:</span> Instantly see how individual athletes stack up against team benchmarks.</li>
+            <li><span class="highlight-text">Strategic Indicators:</span> Visualize scoring efficiency, strike rates, and defensive impact.</li>
         </ul>
     </div>
     """, unsafe_allow_html=True)
@@ -89,17 +84,16 @@ with col2:
     st.markdown("""
     <div class="feature-card">
         <div class="feature-title">🤖 AI Projections Engine</div>
-        <p>Leverage our custom-built Machine Learning pipeline to look into the future. This page features:</p>
+        <p>Leverage our custom-built Machine Learning pipeline to anticipate matchday outcomes. This page features:</p>
         <ul>
-            <li><span class="highlight-text">Advanced Algorithms:</span> Powered by PyTorch Neural Networks and Scikit-Learn Random Forests.</li>
-            <li><span class="highlight-text">Future Performance:</span> Generate statistically rigorous projections based on historical training data securely stored in Snowflake.</li>
-            <li><span class="highlight-text">The Competitive Edge:</span> Anticipate player trajectories and performance ceilings before they happen.</li>
+            <li><span class="highlight-text">Advanced Deep Learning:</span> Powered by PyTorch Neural Networks and Scikit-Learn.</li>
+            <li><span class="highlight-text">Combinatorial Lineup Solver:</span> SciPy Mixed-Integer Linear Programming for optimal 11-man roster selection.</li>
+            <li><span class="highlight-text">Strategic Partnerships:</span> Historical pairwise synergy scoring to optimize on-pitch partnerships.</li>
         </ul>
     </div>
     """, unsafe_allow_html=True)
 
-st.write("") # Spacer
+st.write("") 
 st.divider()
 
-# Call to action pointing to the sidebar
-st.info("👈 **Ready to explore? Select 'Player Analysis' from the sidebar menu to the left to begin.**")
+st.info("👈 **Ready to explore? Select '1_Player_Stats' from the sidebar menu to the left to begin.**")

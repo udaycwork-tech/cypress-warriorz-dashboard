@@ -1,0 +1,626 @@
+Fielder,How Out,BatsMan,Bowler,Season,Match_Type,Playoff_Round,Opponent,Match_Result,File_Name
+Pratyush V,ctw,Parvinder Singh,Avinash P,ADGO Season 13,Regular Season,N/A,Peacock C4,Win,ADGOS13G1.csv
+Pratyush V,ctw,Anil Konchala,Garv C,ADGO Season 13,Regular Season,N/A,Peacock C4,Win,ADGOS13G1.csv
+Garv C,ct,Aseem Garg,Shail P,ADGO Season 13,Regular Season,N/A,Peacock C4,Win,ADGOS13G1.csv
+Pratyush V,ctw,Zafar Zaidi,Avinash P,ADGO Season 13,Regular Season,N/A,Peacock C4,Win,ADGOS13G1.csv
+Pratyush V,ctw,Sharad Bopche,Shail P,ADGO Season 13,Regular Season,N/A,Peacock C4,Win,ADGOS13G1.csv
+Pratyush V,ctw,Ankur Naik,Avinash P,ADGO Season 13,Regular Season,N/A,Peacock C4,Win,ADGOS13G1.csv
+Garv C,ct,Mahidhar Agraharam,Goutham C,ADGO Season 13,Regular Season,N/A,Peacock C4,Win,ADGOS13G1.csv
+Pratyush V,ctw,Abhijeet Wikhar,Karan P,ADGO Season 13,Regular Season,N/A,Peacock C4,Win,ADGOS13G1.csv
+Pratyush V,ctw,Shahad Munna,Garv C,ADGO Season 13,Regular Season,N/A,Houston Benchwarmers,Win,ADGOS13G2.csv
+Garv C,ct,Emtiaz Mostafiz,Pranav R,ADGO Season 13,Regular Season,N/A,Houston Benchwarmers,Win,ADGOS13G2.csv
+Pratyush V,ctw,Tanay Chowdhury,Avinash P,ADGO Season 13,Regular Season,N/A,Houston Benchwarmers,Win,ADGOS13G2.csv
+Archit S,ro,Shohan Morshed,nan,ADGO Season 13,Regular Season,N/A,Houston Benchwarmers,Win,ADGOS13G2.csv
+Archit S,ct,Shabab Rahman,Avinash P,ADGO Season 13,Regular Season,N/A,Houston Benchwarmers,Win,ADGOS13G2.csv
+Rajesh P,ct,Muhtadi Tanim,Rajesh P,ADGO Season 13,Regular Season,N/A,Houston Benchwarmers,Win,ADGOS13G2.csv
+Nagul Sharif S,ctw,Nikhil Gangishetty,Garv C,ADGO Season 13,Regular Season,N/A,Katy Ravens,Win,ADGOS13G3.csv
+Nagul Sharif S,ro,Naresh Bhayani,nan,ADGO Season 13,Regular Season,N/A,Katy Ravens,Win,ADGOS13G3.csv
+Avinash P,ct,Jayesh Gohil,Vamsi K,ADGO Season 13,Regular Season,N/A,Katy Ravens,Win,ADGOS13G3.csv
+Garv C,ct,Bhargav Vasavada,Uday C,ADGO Season 13,Regular Season,N/A,Katy Ravens,Win,ADGOS13G3.csv
+Nasar vali S,ct,Rohan Reddy Yeruva,Uday C,ADGO Season 13,Regular Season,N/A,Katy Ravens,Win,ADGOS13G3.csv
+Vamsi K,ro,Raghava Sharma,nan,ADGO Season 13,Regular Season,N/A,Katy Ravens,Win,ADGOS13G3.csv
+Charles Ethan G,ct,Vamsi Kommalapati,Sid A,Fall 2023,Playoff,Final,Rowdy Boys,Loss,Fall2023Finals.csv
+Garv C,ct,Chaitanya Kancharla,Nitesh K,Fall 2023,Playoff,Final,Rowdy Boys,Loss,Fall2023Finals.csv
+Nitesh K,ct,Ashwin Tandon,Shahid K,Fall 2023,Playoff,Final,Rowdy Boys,Loss,Fall2023Finals.csv
+Charles Ethan G,ct,Tanoy Ahsan,Nitesh K,Fall 2023,Playoff,Semi Final,Bth,Win,Fall2023SF.csv
+Rajesh P,ct,Altaf Khan,Manjinder S,Fall 2023,Playoff,Semi Final,Bth,Win,Fall2023SF.csv
+Manjinder S,ct,Fahim Khan,Nitesh K,Fall 2023,Playoff,Semi Final,Bth,Win,Fall2023SF.csv
+Pranav R,ro,Ashraful Haque,Arun A,Fall 2023,Playoff,Semi Final,Bth,Win,Fall2023SF.csv
+Garv C,ct,Tanim Choudhury,Nitesh K,Fall 2023,Playoff,Semi Final,Bth,Win,Fall2023SF.csv
+Abu S,ctw,Shankar Narayanan,Subramanya U,Fall 2023,Regular Season,N/A,HEC,Win,Fall2023G1.csv
+Abu S,ctw,Jagdish Prajapati,Pranav R,Fall 2023,Regular Season,N/A,HEC,Win,Fall2023G1.csv
+Abu S,ctw,Sayujya Patil,Rakesh K,Fall 2023,Regular Season,N/A,HEC,Win,Fall2023G1.csv
+Abu S,ctw,Chirag Bhagat,Subramanya U,Fall 2023,Regular Season,N/A,HEC,Win,Fall2023G1.csv
+Uday C,ct,Shagun Bhat,Subramanya U,Fall 2023,Regular Season,N/A,HEC,Win,Fall2023G1.csv
+Abu S,ctw,Atul Jain,Pranav R,Fall 2023,Regular Season,N/A,HEC,Win,Fall2023G1.csv
+Uday C,ct,Sacchit Thakur,Uday C,Fall 2023,Regular Season,N/A,HEC,Win,Fall2023G1.csv
+Pranav R,ct,Manish Jagannathan,Pranav R,Fall 2023,Regular Season,N/A,HEC,Win,Fall2023G1.csv
+Abu S,ctw,Rangarajan Sundararajan,Rakesh K,Fall 2023,Regular Season,N/A,HEC,Win,Fall2023G1.csv
+Sunil P,ct,Sadrul Amin Sakil,Rajesh P,Fall 2023,Regular Season,N/A,Bth,Win,Fall2023G2.csv
+Sadesh C,ct,Khaled Hassan,Chirag G,Fall 2023,Regular Season,N/A,Bth,Win,Fall2023G2.csv
+Abu S,ctw,Tanim Choudhury,Rakesh K,Fall 2023,Regular Season,N/A,Bth,Win,Fall2023G2.csv
+Uday C,ct,Wasim Choudhury,Sadesh C,Fall 2023,Regular Season,N/A,Bth,Win,Fall2023G2.csv
+Sadesh C,ct,Hassan Sharif,Sadesh C,Fall 2023,Regular Season,N/A,Bth,Win,Fall2023G2.csv
+Abu S,ctw,Md Riaj Uddin,MukeshKannan D,Fall 2023,Regular Season,N/A,Katy Ravens,Win,Fall2023G3.csv
+Abu S,ctw,Rathan Bhaskara,Nitesh K,Fall 2023,Regular Season,N/A,Katy Ravens,Win,Fall2023G3.csv
+Garv C,ct,Manoj Padmanabha,Nitesh K,Fall 2023,Regular Season,N/A,Katy Ravens,Win,Fall2023G3.csv
+Abu S,ctw,Shams Imam,Rakesh K,Fall 2023,Regular Season,N/A,Katy Ravens,Win,Fall2023G3.csv
+Garv C,ro,Nahid Hossain,Abu S,Fall 2023,Regular Season,N/A,Katy Ravens,Win,Fall2023G3.csv
+Abu S,ctw,Sabbir Ashraf,Nitesh K,Fall 2023,Regular Season,N/A,Katy Ravens,Win,Fall2023G3.csv
+Abu S,ctw,Sai Adarsh Puvalla,Sreekanth K,Fall 2023,Regular Season,N/A,Katy Ravens,Win,Fall2023G3.csv
+Abu S,ctw,Tonmoy Khan,Sreekanth K,Fall 2023,Regular Season,N/A,Katy Ravens,Win,Fall2023G3.csv
+Uday C,ct,Rohit Bade,Pranav R,Fall 2023,Regular Season,N/A,Wolfpack Icons,Win,Fall2023G4.csv
+Anil M,ct,Jayanth Kalakuntla,Rakesh K,Fall 2023,Regular Season,N/A,Wolfpack Icons,Win,Fall2023G4.csv
+Sai kiran K,ctw,Phani Nunna,Rayyan H,Fall 2023,Regular Season,N/A,Wolfpack Icons,Win,Fall2023G4.csv
+Garv C,ct,Karthik Vadlamudi,Pranav R,Fall 2023,Regular Season,N/A,Wolfpack Icons,Win,Fall2023G4.csv
+Sunil P,ct,Ap Sharma,Aijaz C,Fall 2023,Regular Season,N/A,Wolfpack Icons,Win,Fall2023G4.csv
+Aijaz C,ro,Saikumar Vummuti,Sai kiran K,Fall 2023,Regular Season,N/A,Wolfpack Icons,Win,Fall2023G4.csv
+Aijaz C,ct,Jatin Jain,Aijaz C,Fall 2023,Regular Season,N/A,Stallions,Win,Fall2023G5.csv
+Garv C,ctw,Uday Jadhav,Rajesh P,Fall 2023,Regular Season,N/A,Stallions,Win,Fall2023G5.csv
+Rajesh P,ct,Krishna Dodlety,Goutham C,Fall 2023,Regular Season,N/A,Stallions,Win,Fall2023G5.csv
+Garv C,ctw,Phani Toutam,Subramanya U,Fall 2023,Regular Season,N/A,Stallions,Win,Fall2023G5.csv
+Shreyan S,ctw,Madhav Pati,Sid A,Fall 2023,Regular Season,N/A,Stallions,Win,Fall2023G5.csv
+Abu S,ctw,Saifee Siddique,Garv C,Fall 2023,Regular Season,N/A,Champion CC,Win,Fall2023G7.csv
+Abu S,ro,Umair Khalid,Harish P,Fall 2023,Regular Season,N/A,Champion CC,Win,Fall2023G7.csv
+Garv C,ct,Azhar Ahmed,Manjinder S,Fall 2023,Regular Season,N/A,Champion CC,Win,Fall2023G7.csv
+Manjinder S,ct,Salman Farooqui,Rakesh K,Fall 2023,Regular Season,N/A,Champion CC,Win,Fall2023G7.csv
+Harish P,ct,Saif Khan,Rakesh K,Fall 2023,Regular Season,N/A,Champion CC,Win,Fall2023G7.csv
+Abu S,ctw,Debloke Maitra,Nitesh K,Fall 2023,Regular Season,N/A,Champion CC,Win,Fall2023G7.csv
+Abu S,ctw,Gohar Ali,Nitesh K,Fall 2023,Regular Season,N/A,Champion CC,Win,Fall2023G7.csv
+Garv C,ct,Omar Bangash,Manjinder S,Fall 2023,Regular Season,N/A,Champion CC,Win,Fall2023G7.csv
+Garv C,ro,Prakash Parthiban,Sohan M,Fall 2024,Playoff,Final,Wolfpack Icons,Loss,Fall2024Finals.csv
+Viswatej M,ct,Atif Syed,Gaurav M,Fall 2024,Playoff,Final,Wolfpack Icons,Loss,Fall2024Finals.csv
+Ravi Kishore B,ct,Deepak Paruchuri,Harsha T,Fall 2024,Playoff,Final,Wolfpack Icons,Loss,Fall2024Finals.csv
+Substitute,ct,Ravi Yerramsetty,Subramanya U,Fall 2024,Playoff,Final,Wolfpack Icons,Loss,Fall2024Finals.csv
+Roshaka R,ct,Prashanth Manne,Roshaka R,Fall 2024,Playoff,Final,Wolfpack Icons,Loss,Fall2024Finals.csv
+Arun A,ct,Karthik Vadlamudi,Roshaka R,Fall 2024,Playoff,Final,Wolfpack Icons,Loss,Fall2024Finals.csv
+Subramanya U,ct,Rohit Bade,Roshaka R,Fall 2024,Playoff,Final,Wolfpack Icons,Loss,Fall2024Finals.csv
+Harsha T,ct,Rajesh Pant,Subramanya U,Fall 2024,Playoff,Final,Wolfpack Icons,Loss,Fall2024Finals.csv
+Roshaka R,ct,Asha Kiran Poojari,Sohan M,Fall 2024,Playoff,Quarter Final,Bcc Legends,Win,Fall2024QF.csv
+Subramanya U,ro,Chaitu Kandimalla,Sohan M,Fall 2024,Playoff,Quarter Final,Bcc Legends,Win,Fall2024QF.csv
+Uday C,ro,Vamsi Nagavarapu,Sohan M,Fall 2024,Playoff,Quarter Final,Bcc Legends,Win,Fall2024QF.csv
+Arun A,ctw,Imran Khan,Govardhan K,Fall 2024,Playoff,Semi Final,Houston Benchwarmers,Win,Fall2024SF.csv
+Arun A,ctw,Rakib Ahmed,Govardhan K,Fall 2024,Playoff,Semi Final,Houston Benchwarmers,Win,Fall2024SF.csv
+Sohan M,ct,Shahad Munna,Garv C,Fall 2024,Playoff,Semi Final,Houston Benchwarmers,Win,Fall2024SF.csv
+Roshaka R,ct,Zubayed Rakib,Gohar A,Fall 2024,Playoff,Semi Final,Houston Benchwarmers,Win,Fall2024SF.csv
+Srinivasarao K,ct,Dewan Sayeed,Gohar A,Fall 2024,Playoff,Semi Final,Houston Benchwarmers,Win,Fall2024SF.csv
+Arun A,ro,Diner M. Islam,Ravi Kishore B,Fall 2024,Playoff,Semi Final,Houston Benchwarmers,Win,Fall2024SF.csv
+Roshaka R,ct,Julfiker Shovon,Manjinder S,Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,Fall2024G1.csv
+Gagan N,ctw,Zubayed Rakib,Harsha T,Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,Fall2024G1.csv
+Manjinder S,ct,Dewan Sayeed,Gagan N,Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,Fall2024G1.csv
+Gagan N,ctw,Diner M. Islam,Garv C,Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,Fall2024G1.csv
+Arun A,ct,Saifur Rahman,Uday C,Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,Fall2024G1.csv
+Gagan N,ctw,Shah Choudhury,Ravi Kishore B,Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,Fall2024G1.csv
+Ravi Kishore B,ro,Ziaur Rahman,Garv C,Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,Fall2024G1.csv
+Garv C,ctw,Md Touhidul Islam,Subramanya U,Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,Fall2024G1.csv
+Garv C,ctw,Md Rajib,Subramanya U,Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,Fall2024G1.csv
+Garv C,ro,Saleem Shaik,Jagdish P,Fall 2024,Regular Season,N/A,Champion CC,Win,Fall2024G2.csv
+Garv C,ro,Musa M,Arnav C,Fall 2024,Regular Season,N/A,Champion CC,Win,Fall2024G2.csv
+Garv C,ro,Arslan Shamim,Roshaka R,Fall 2024,Regular Season,N/A,Champion CC,Win,Fall2024G2.csv
+Uday C,ct,Jameel Rahman,Uday C,Fall 2024,Regular Season,N/A,Champion CC,Win,Fall2024G2.csv
+Garv C,ctw,Syed Mohiaddin,Subramanya U,Fall 2024,Regular Season,N/A,Champion CC,Win,Fall2024G2.csv
+Roshaka R,ct,Saifee Siddique,Uday C,Fall 2024,Regular Season,N/A,Champion CC,Win,Fall2024G2.csv
+Garv C,ctw,Malik Tabeer,Subramanya U,Fall 2024,Regular Season,N/A,Champion CC,Win,Fall2024G2.csv
+Roshaka R,ct,Sandeep Stanley,Uday C,Fall 2024,Regular Season,N/A,Champion CC,Win,Fall2024G2.csv
+Garv C,ro,Naveen Kumar Reddy Vallam,Jagdish P,Fall 2024,Regular Season,N/A,Champion CC,Win,Fall2024G2.csv
+Arnav C,ct,Kiran Pariti,Mahesh A,Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,Fall2024G3.csv
+Garv C,ctw,Kiran Boddupalli,Subramanya U,Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,Fall2024G3.csv
+Aijaz C,ct,Upender Cheeti,Mahesh A,Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,Fall2024G3.csv
+Arun A,ctw,Sid Marathe,Garv C,Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,Fall2024G3.csv
+Nishant P,ct,Satya S,Arnav C,Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,Fall2024G3.csv
+Sohan M,ctw,Raju Neelam,Mahesh A,Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,Fall2024G3.csv
+Goutham C,ct,Ashok Varma,Mahesh A,Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,Fall2024G3.csv
+Arun A,ct,Harsha Ramineedi,Garv C,Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,Fall2024G3.csv
+Garv C,ctw,Sunil Yernagula,Arnav C,Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,Fall2024G3.csv
+Garv C,ctw,Joe Alenchery,Mahesh A,Fall 2024,Regular Season,N/A,Bcc Legends,Win,Fall2024G4.csv
+Balaram K,ro,Asha Kiran Poojari,Uday C,Fall 2024,Regular Season,N/A,Bcc Legends,Win,Fall2024G4.csv
+Roshaka R,ct,Jeeva Chinnusamy,Govardhan K,Fall 2024,Regular Season,N/A,Bcc Legends,Win,Fall2024G4.csv
+Govardhan K,ct,Kiran Kumar Reddy Suram,Mahesh A,Fall 2024,Regular Season,N/A,Bcc Legends,Win,Fall2024G4.csv
+Govardhan K,ro,Venkat Birudala,nan,Fall 2024,Regular Season,N/A,Bcc Legends,Win,Fall2024G4.csv
+Bernard S,ct,Abu Siddiq,Nitesh K,Fall 2024,Regular Season,N/A,Blue Star,Win,Fall2024G6.csv
+Substitute,ctw,Mukeshkannan Dhanasekar,Avinash N,Fall 2024,Regular Season,N/A,Blue Star,Win,Fall2024G6.csv
+Substitute,ctw,Harish Ravichandran,Gohar A,Fall 2024,Regular Season,N/A,Blue Star,Win,Fall2024G6.csv
+Shiva Reddy B,ct,Mohamed Kattuva,Harsha T,Fall 2024,Regular Season,N/A,Blue Star,Win,Fall2024G6.csv
+Substitute,ctw,Edvin Irwin,Bernard S,Fall 2024,Regular Season,N/A,Blue Star,Win,Fall2024G6.csv
+Sohan M,ct,Vivek Subramanian,Bernard S,Fall 2024,Regular Season,N/A,Blue Star,Win,Fall2024G6.csv
+Sohan M,ct,Anand Harikumar,Harsha T,Fall 2024,Regular Season,N/A,Blue Star,Win,Fall2024G6.csv
+Garv C,ctw,Manjoor Shaik,Roshaka R,Fall 2024,Regular Season,N/A,Rowdy Boys,No Result,Fall2024G7.csv
+Roshaka R,ct,Nagul Sharif Shaik,Roshaka R,Fall 2024,Regular Season,N/A,Rowdy Boys,No Result,Fall2024G7.csv
+Aarnav P,ct,Amarnath Reddy Pabhathi,Subramanya U,Fall 2025,Playoff,Final,Hashtag Indians,Win,Fall2025Finals.csv
+Aarnav P,ct,Kiran Kumar Gunnammagari,Avinash P,Fall 2025,Playoff,Final,Hashtag Indians,Win,Fall2025Finals.csv
+Geroge I,ctw,Naresh Nadhendla,Avinash P,Fall 2025,Playoff,Final,Hashtag Indians,Win,Fall2025Finals.csv
+Geroge I,ctw,Ajay Reddy,Avinash P,Fall 2025,Playoff,Final,Hashtag Indians,Win,Fall2025Finals.csv
+Kavindu P,ct,Amith Gudimella,Aarnav P,Fall 2025,Playoff,Final,Hashtag Indians,Win,Fall2025Finals.csv
+Garv C,ct,Vivek Varma Manthena,Subramanya U,Fall 2025,Playoff,Final,Hashtag Indians,Win,Fall2025Finals.csv
+Avinash P,ct,Sathvik Varma,Aarnav P,Fall 2025,Playoff,Final,Hashtag Indians,Win,Fall2025Finals.csv
+Kavindu P,ct,Ashok Reddy N B,Avinash P,Fall 2025,Playoff,Final,Hashtag Indians,Win,Fall2025Finals.csv
+Geroge I,st,Bharat Pyla,Uday C,Fall 2025,Playoff,Final,Hashtag Indians,Win,Fall2025Finals.csv
+Shiva P,ct,Hamza Bangesh,Uday C,Fall 2025,Playoff,Quarter Final,QHRS,Win,Fall2025QF.csv
+Avinash P,ct,Prabaharan Devadoss,Garv C,Fall 2025,Playoff,Quarter Final,QHRS,Win,Fall2025QF.csv
+Arun A,ctw,Amol Mane,Avinash P,Fall 2025,Playoff,Quarter Final,QHRS,Win,Fall2025QF.csv
+Aarnav P,ct,Milin Patel,Subramanya U,Fall 2025,Playoff,Quarter Final,QHRS,Win,Fall2025QF.csv
+Arun A,ctw,Manjunath Manik,Avinash P,Fall 2025,Playoff,Quarter Final,QHRS,Win,Fall2025QF.csv
+Tanmay S,ct,Chandu Nannapaneni,Tanmay S,Fall 2025,Playoff,Quarter Final,QHRS,Win,Fall2025QF.csv
+Arun A,ct,Hemant Paliwal,Roshaka R,Fall 2025,Playoff,Quarter Final,QHRS,Win,Fall2025QF.csv
+Geroge I,ctw,Venkat Peram,Avinash P,Fall 2025,Playoff,Semi Final,Falcons XI,Win,Fall2025SF.csv
+Geroge I,ctw,Purushothamraju Addepalli,Garv C,Fall 2025,Playoff,Semi Final,Falcons XI,Win,Fall2025SF.csv
+Avinash P,ct,Girish Mopuru,Aarnav P,Fall 2025,Playoff,Semi Final,Falcons XI,Win,Fall2025SF.csv
+Uday C,ct,Shiva Reddy Baddam,Garv C,Fall 2025,Playoff,Semi Final,Falcons XI,Win,Fall2025SF.csv
+Geroge I,ctw,Shashank Macha,Aarnav P,Fall 2025,Playoff,Semi Final,Falcons XI,Win,Fall2025SF.csv
+Geroge I,ctw,Rakesh Munnoor Raja,Uday C,Fall 2025,Playoff,Semi Final,Falcons XI,Win,Fall2025SF.csv
+Geroge I,ro,Bharath Mulakalapalli,Aarnav P,Fall 2025,Playoff,Semi Final,Falcons XI,Win,Fall2025SF.csv
+Uday C,ct,Praveen Raja Neerukonda,Aarnav P,Fall 2025,Playoff,Semi Final,Falcons XI,Win,Fall2025SF.csv
+Kavindu P,ct,Balaji Pujari,Avinash P,Fall 2025,Playoff,Semi Final,Falcons XI,Win,Fall2025SF.csv
+Avinash P,ct,Zaki Mohammed,Garv C,Fall 2025,Regular Season,N/A,Champion CC,Win,Fall2025G1.csv
+Ojas B,ct,Usman Sikandar,Shashivardhan Reddy R,Fall 2025,Regular Season,N/A,Champion CC,Win,Fall2025G1.csv
+Geroge I,ctw,Siraj Sheikh,Shashivardhan Reddy R,Fall 2025,Regular Season,N/A,Champion CC,Win,Fall2025G1.csv
+Geroge I,ro,Naveen Kumar Reddy Vallam,Shashivardhan Reddy R,Fall 2025,Regular Season,N/A,Champion CC,Win,Fall2025G1.csv
+Geroge I,ctw,Syed Mohiaddin,Roshaka R,Fall 2025,Regular Season,N/A,Champion CC,Win,Fall2025G1.csv
+Geroge I,ro,Saleem Shaik,Geroge I,Fall 2025,Regular Season,N/A,Champion CC,Win,Fall2025G1.csv
+Arun A,ct,Faruque Hasan,Udesh J,Fall 2025,Regular Season,N/A,BTAMU,Win,Fall2025G2.csv
+Aarnav P,ct,Mohammad Ruzlan Habib,Subramanya U,Fall 2025,Regular Season,N/A,BTAMU,Win,Fall2025G2.csv
+Sohan M,ctw,Himel Rahman,Garv C,Fall 2025,Regular Season,N/A,BTAMU,Win,Fall2025G2.csv
+Garv C,ct,Mohammad Anis,Aarnav P,Fall 2025,Regular Season,N/A,BTAMU,Win,Fall2025G2.csv
+Pratyush V,ct,Mahbub Ul Hasan,Janith I,Fall 2025,Regular Season,N/A,BTAMU,Win,Fall2025G2.csv
+Garv C,ct,Asif Ahmed,Aarnav P,Fall 2025,Regular Season,N/A,BTAMU,Win,Fall2025G2.csv
+Justin T,ctw,Sijad Islam,Aarnav P,Fall 2025,Regular Season,N/A,BTAMU,Win,Fall2025G2.csv
+Subramanya U,ct,Sakib Mahmud,Pratyush V,Fall 2025,Regular Season,N/A,BTAMU,Win,Fall2025G2.csv
+Arun A,ctw,Gnaneswar Tummala,Garv C,Fall 2025,Regular Season,N/A,OG'S,Win,Fall2025G3.csv
+Arun A,ctw,Aswant Ganesh Bodapati,Garv C,Fall 2025,Regular Season,N/A,OG'S,Win,Fall2025G3.csv
+Arun A,ctw,Karthik Pinnamaraju,Garv C,Fall 2025,Regular Season,N/A,OG'S,Win,Fall2025G3.csv
+Sriram R,ct,Bhargav Reddivari,Rishabh V,Fall 2025,Regular Season,N/A,OG'S,Win,Fall2025G3.csv
+Arun A,ctw,Satish Gandreddy,Garv C,Fall 2025,Regular Season,N/A,OG'S,Win,Fall2025G3.csv
+Arun A,ctw,Eswar Duvvu,Archit S,Fall 2025,Regular Season,N/A,OG'S,Win,Fall2025G3.csv
+Arun A,ro,Udai Parvathaneni,Krrish P,Fall 2025,Regular Season,N/A,OG'S,Win,Fall2025G3.csv
+Uday C,ct,Abeer Ahmed,Emilio S,Fall 2025,Regular Season,N/A,Bth,Win,Fall2025G4.csv
+Arun A,ctw,Tanim Choudhury,Pratyush V,Fall 2025,Regular Season,N/A,Bth,Win,Fall2025G4.csv
+Arun A,ctw,Tanoy Ahsan,Pratyush V,Fall 2025,Regular Season,N/A,Bth,Win,Fall2025G4.csv
+Uday C,ct,Shamnun Muhebb Ovee,Emilio S,Fall 2025,Regular Season,N/A,Bth,Win,Fall2025G4.csv
+Kavindu P,ct,Kamrul Isalam,Emilio S,Fall 2025,Regular Season,N/A,Bth,Win,Fall2025G4.csv
+Archit S,ro,Sadrul Amin Sakil,Pratyush V,Fall 2025,Regular Season,N/A,Bth,Win,Fall2025G4.csv
+Shiva P,ctw,Gautham Kanaparthy,Thisara I,Fall 2025,Regular Season,N/A,Stallions,Loss,Fall2025G5.csv
+Garv C,ct,Abhinav Sikharam,Tanmay S,Fall 2025,Regular Season,N/A,Stallions,Loss,Fall2025G5.csv
+Shiva P,ctw,Phani Toutam,Bernard S,Fall 2025,Regular Season,N/A,Stallions,Loss,Fall2025G5.csv
+Arun A,ct,Tanuj Kumar,Tanmay S,Fall 2025,Regular Season,N/A,Stallions,Loss,Fall2025G5.csv
+Aditya D,ct,Avinash Naidu,Rishabh V,Fall 2025,Regular Season,N/A,Stallions,Loss,Fall2025G5.csv
+Shiva P,ctw,Madhav Pati,Rishabh V,Fall 2025,Regular Season,N/A,Stallions,Loss,Fall2025G5.csv
+Shiva P,ctw,Jatin Jain,Garv C,Fall 2025,Regular Season,N/A,Stallions,Loss,Fall2025G5.csv
+Uday C,ct,Vamsi Kommalapati,Subramanya U,Fall 2025,Regular Season,N/A,Rowdy Boys,Win,Fall2025G6.csv
+Arun A,ct,Shahil Shaik,Aarnav P,Fall 2025,Regular Season,N/A,Rowdy Boys,Win,Fall2025G6.csv
+Aarnav P,ct,Naveen Chennaiepalem,Subramanya U,Fall 2025,Regular Season,N/A,Rowdy Boys,Win,Fall2025G6.csv
+Bernard S,ctw,Venkata Phani Kunderu,Aarnav P,Fall 2025,Regular Season,N/A,Rowdy Boys,Win,Fall2025G6.csv
+Bernard S,ctw,Manjoor Shaik,Subramanya U,Fall 2025,Regular Season,N/A,Rowdy Boys,Win,Fall2025G6.csv
+Shail P,ct,Anil Bhimisetty,Garv C,Fall 2025,Regular Season,N/A,Rowdy Boys,Win,Fall2025G6.csv
+Garv C,ct,Sadrul Amin Sakil,Goutham C,Practice League,Practice,N/A,Bth,Loss,PracticeGame1.csv
+Sohan M,ct,Tanvir Meherab,Sohan M,Practice League,Practice,N/A,Bth,Loss,PracticeGame1.csv
+Noel G,ct,Shahzad Ahmed,Uday C,Practice League,Practice,N/A,Bth,Loss,PracticeGame1.csv
+Substitute,ct,Moshud Choudhury,Sherwin M,Practice League,Practice,N/A,Bth,Loss,PracticeGame1.csv
+Goutham C,ct,Imran Khan,Leyeesh S,Practice League,Practice,N/A,Bth,Loss,PracticeGame1.csv
+Garv C,ct,Tanim Choudhury,Goutham C,Practice League,Practice,N/A,Bth,Loss,PracticeGame1.csv
+Harish P,ctw,Wasim Choudhury,Goutham C,Practice League,Practice,N/A,Bth,Loss,PracticeGame1.csv
+Sohan M,ct,Usman Afridi,Uday C,Practice League,Practice,N/A,Bth,Loss,PracticeGame1.csv
+Uday C,ro,Raghib Ahsan,nan,Practice League,Practice,N/A,Bth,Loss,PracticeGame1.csv
+Suriya B,ct,Shabab Rahman,Suriya B,Practice League,Practice,N/A,Bth,Loss,PracticeGame2.csv
+Abu S,ro,Imran Khan,nan,Practice League,Practice,N/A,Bth,Loss,PracticeGame2.csv
+Charles Ethan G,ctw,Moshud Choudhury,MukeshKannan D,Practice League,Practice,N/A,Bth,Loss,PracticeGame2.csv
+MukeshKannan D,ct,Shium Rahman,Suriya B,Practice League,Practice,N/A,Bth,Loss,PracticeGame2.csv
+Charles Ethan G,ctw,Thasin Chowdhury,Suriya B,Practice League,Practice,N/A,Bth,Loss,PracticeGame2.csv
+Leyeesh S,ct,Wasim Choudhury,Suriya B,Practice League,Practice,N/A,Bth,Loss,PracticeGame2.csv
+Charles Ethan G,ctw,Tanim Choudhury,MukeshKannan D,Practice League,Practice,N/A,Bth,Loss,PracticeGame2.csv
+Harish P,ct,Choudhury Talha,Suriya B,Practice League,Practice,N/A,Bth,Loss,PracticeGame2.csv
+Samuel R,ct,Shamnun Muhebb Ovee,Arun A,Practice League,Practice,N/A,Bth,Loss,PracticeGame2.csv
+Abu S,ct,Sadrul Amin Sakil,Samuel R,Practice League,Practice,N/A,Bth,Loss,PracticeGame2.csv
+Shahzad A,ct,Thasin Chowdhury,Emilio S,Practice League,Practice,N/A,Bth,Win,PracticeGame3.csv
+Harish P,ro,Sadil Ahmed,Uday C,Practice League,Practice,N/A,Bth,Win,PracticeGame3.csv
+Shahzad A,ct,Bassim Motiwala,Uday C,Practice League,Practice,N/A,Bth,Win,PracticeGame3.csv
+Sohan M,ctw,Wasim Choudhury,Shayaan S,Practice League,Practice,N/A,Bth,Win,PracticeGame3.csv
+Sohan M,ctw,Adnanul Karim,Emilio S,Practice League,Practice,N/A,Bth,Win,PracticeGame3.csv
+Uday C,ro,Choudhury Talha,Charles Ethan G,Practice League,Practice,N/A,Bth,Win,PracticeGame3.csv
+Charles Ethan G,ct,Tanim Choudhury,Nishanth M,Practice League,Practice,N/A,Bth,Win,PracticeGame3.csv
+Garv C,ctw,Shamnun Muhebb Ovee,Uday C,Practice League,Practice,N/A,Bth,Win,PracticeGame3.csv
+Uday C,ctw,Imran Khan,Suriya B,Practice League,Practice,N/A,Bth,Win,PracticeGame4.csv
+Harish P,ro,Sadrul Amin Sakil,Uday C,Practice League,Practice,N/A,Bth,Win,PracticeGame4.csv
+Uday C,ct,Yesdani Shaik,Uday C,Practice League,Practice,N/A,Bth,Win,PracticeGame4.csv
+Garv C,ctw,Kazi Kabir,Leyeesh S,Practice League,Practice,N/A,Bth,Win,PracticeGame4.csv
+Garv C,ro,Sadil Ahmed,nan,Practice League,Practice,N/A,Bth,Win,PracticeGame4.csv
+Garv C,st,Mohammad Kamal,Harish P,Practice League,Practice,N/A,Bth,Win,PracticeGame4.csv
+Garv C,ctw,Shamnun Muhebb Ovee,Chirag G,Practice League,Practice,N/A,Bth,Win,PracticeGame4.csv
+Garv C,ctw,Nibeer A,Suriya B,Practice League,Practice,N/A,Bth,Win,PracticeGame4.csv
+Uday C,ct,Sadil Ahmed,Chirag G,Practice League,Practice,N/A,Bth,Win,PracticeGame4.csv
+Uday C,ct,Varun Gupta,Garv C,Practice League,Practice,N/A,Bcc Legends,Win,PracticeGame5.csv
+Uday C,ct,Joe Alenchery,Aditya B,Practice League,Practice,N/A,Bcc Legends,Win,PracticeGame5.csv
+Garv C,ctw,Asha Kiran Poojari,Nishant P,Practice League,Practice,N/A,Bcc Legends,Win,PracticeGame5.csv
+Uday C,ct,Venkat Birudala,Garv C,Practice League,Practice,N/A,Bcc Legends,Win,PracticeGame5.csv
+Garv C,ctw,Bala Bala,Vaidik V,Practice League,Practice,N/A,Bcc Legends,Win,PracticeGame5.csv
+Garv C,ctw,Jacob Tim,Shreyas B,Practice League,Practice,N/A,Bcc Legends,Win,PracticeGame5.csv
+Garv C,ctw,Murthy Vajrala,Uday C,Practice League,Practice,N/A,Bcc Legends,Win,PracticeGame5.csv
+Garv C,ro,Abhijeet J,Pavan N,Practice League,Practice,N/A,Bcc Legends,Win,PracticeGame5.csv
+Emilio S,ct,Hemanth H,Emilio S,Practice League,Practice,N/A,Bcc Legends,Win,PracticeGame5.csv
+Nishant P,ct,Shivang Sharma,Uday C,Practice League,Practice,N/A,Bcc Legends,Win,PracticeGame5.csv
+Arun A,ctw,Adeel Motiwala,Vamshi T,Practice League,Practice,N/A,Bth,Win,PracticeGame6.csv
+Arun A,ctw,Asif H Khan,Murthy V,Practice League,Practice,N/A,Bth,Win,PracticeGame6.csv
+Sreekanth K,ct,Tanim Choudhury,Murthy V,Practice League,Practice,N/A,Bth,Win,PracticeGame6.csv
+Sreekanth K,ct,Abeer Ahmed,Murthy V,Practice League,Practice,N/A,Bth,Win,PracticeGame6.csv
+Arun A,ctw,Choudhury Talha,Viral G,Practice League,Practice,N/A,Bth,Win,PracticeGame6.csv
+Uday C,ct,Raghib Ahsan,Sohan M,Practice League,Practice,N/A,Bth,Win,PracticeGame6.csv
+Pj G,ct,Razin Haque,Ravi Kishore B,Spring 2023,Regular Season,N/A,Katy Ravens,Win,Spring2023G1.csv
+Sohan M,ro,Nahid Hossain,nan,Spring 2023,Regular Season,N/A,Katy Ravens,Win,Spring2023G1.csv
+Ravi Kishore B,ct,Morshad Ahmed,Vivek B,Spring 2023,Regular Season,N/A,Katy Ravens,Win,Spring2023G1.csv
+Harish P,ro,Faz Imtiaz,nan,Spring 2023,Regular Season,N/A,Katy Ravens,Win,Spring2023G1.csv
+Charles Ethan G,ctw,Md Riaj Uddin,Vivek B,Spring 2023,Regular Season,N/A,Katy Ravens,Win,Spring2023G1.csv
+Abu S,ro,Tagore H,nan,Spring 2023,Regular Season,N/A,Downtown Dynamitz,Win,Spring2023G2.csv
+Abu S,ctw,Kiran Pariti,Goutham C,Spring 2023,Regular Season,N/A,Downtown Dynamitz,Win,Spring2023G2.csv
+Goutham C,ct,Harsha Ramineedi,Garv C,Spring 2023,Regular Season,N/A,Downtown Dynamitz,Win,Spring2023G2.csv
+Abu S,ctw,Giri Mullandram,Ravi Kishore B,Spring 2023,Regular Season,N/A,Downtown Dynamitz,Win,Spring2023G2.csv
+Harish P,ct,Subham Hc,Goutham C,Spring 2023,Regular Season,N/A,Downtown Dynamitz,Win,Spring2023G2.csv
+Abu S,ro,Upender Cheeti,Garv C,Spring 2023,Regular Season,N/A,Downtown Dynamitz,Win,Spring2023G2.csv
+Abu S,ro,Hari Krishna Pallem,Uday C,Spring 2023,Regular Season,N/A,Downtown Dynamitz,Win,Spring2023G2.csv
+Abu S,st,Santosh Otod,Goutham C,Spring 2023,Regular Season,N/A,Downtown Dynamitz,Win,Spring2023G2.csv
+Abu S,ctw,Siraj Sheikh,Uday C,Spring 2023,Regular Season,N/A,Champion CC,Loss,Spring2023G3.csv
+Suriya B,ct,Basit Ali,Uday C,Spring 2023,Regular Season,N/A,Champion CC,Loss,Spring2023G3.csv
+Abu S,ct,Debloke Maitra,Abu S,Spring 2023,Regular Season,N/A,Champion CC,Loss,Spring2023G3.csv
+Uday C,ct,Syed Khizar Ali,Abu S,Spring 2023,Regular Season,N/A,Champion CC,Loss,Spring2023G3.csv
+Brock K,ct,Syed Mohiaddin,Abu S,Spring 2023,Regular Season,N/A,Champion CC,Loss,Spring2023G3.csv
+Nitesh K,ct,Shahad Munna,Garv C,Spring 2023,Regular Season,N/A,Bth,Loss,Spring2023G5.csv
+Pj G,ct,Tanoy Ahsan,Garv C,Spring 2023,Regular Season,N/A,Bth,Loss,Spring2023G5.csv
+Abu S,ct,Murthy Vajrala,Subramanya U,Spring 2023,Regular Season,N/A,Bcc Legends,Win,Spring2023G6.csv
+Ravi Kishore B,ct,Kiran Kumar Reddy Suram,Ravi Kishore B,Spring 2023,Regular Season,N/A,Bcc Legends,Win,Spring2023G6.csv
+Sohan M,ctw,Chaitanya Kalapala,Abu S,Spring 2023,Regular Season,N/A,Bcc Legends,Win,Spring2023G6.csv
+Sohan M,ctw,Ramesh Marri,Subramanya U,Spring 2023,Regular Season,N/A,Bcc Legends,Win,Spring2023G6.csv
+Sohan M,ctw,Arjun Devarapalli,Subramanya U,Spring 2023,Regular Season,N/A,Bcc Legends,Win,Spring2023G6.csv
+Sohan M,ctw,Phani Nunna,Abu S,Spring 2023,Regular Season,N/A,Bcc Legends,Win,Spring2023G6.csv
+Uday C,ct,Govardhan Kandula,Uday C,Spring 2023,Regular Season,N/A,Bcc Legends,Win,Spring2023G6.csv
+Emilio S,ct,Saiful Mojumder,Avinash G,Spring 2023,Regular Season,N/A,BTAMU,Loss,Spring2023G7.csv
+Charles Ethan G,ctw,Mohammad Ruzlan Habib,Suchethan M,Spring 2023,Regular Season,N/A,BTAMU,Loss,Spring2023G7.csv
+Uday C,ro,Mostafa Meraj Pasha,Sohan M,Spring 2023,Regular Season,N/A,BTAMU,Loss,Spring2023G7.csv
+Garv C,ct,Md Afzal Hossain,Manjinder S,Spring 2024,Playoff,Quarter Final,Houston Scorpions,Win,Spring2024QF.csv
+Gagan N,ctw,Nafis Sadik Khan,Manjinder S,Spring 2024,Playoff,Quarter Final,Houston Scorpions,Win,Spring2024QF.csv
+Gagan N,ctw,Tanay Chowdhury,Garv C,Spring 2024,Playoff,Quarter Final,Houston Scorpions,Win,Spring2024QF.csv
+Substitute,ct,Sai Sangaraju,Avinash G,Spring 2024,Playoff,Quarter Final,Houston Scorpions,Win,Spring2024QF.csv
+Sriram R,ct,Saiful Alam,Avinash G,Spring 2024,Playoff,Quarter Final,Houston Scorpions,Win,Spring2024QF.csv
+Manjinder S,ct,Firdouse Qasim,Avinash G,Spring 2024,Playoff,Quarter Final,Houston Scorpions,Win,Spring2024QF.csv
+Sunil P,ctw,Faz Imtiaz,Manjinder S,Spring 2024,Playoff,Quarter Final,Houston Scorpions,Win,Spring2024QF.csv
+Avinash G,ro,Sakib Mahmud,Sadesh C,Spring 2024,Playoff,Quarter Final,Houston Scorpions,Win,Spring2024QF.csv
+Arun A,ctw,Prakash Parthiban,Manjinder S,Spring 2024,Playoff,Semi Final,Wolfpack Icons,Loss,Spring2024SF.csv
+Arun A,ctw,Chaitanya Kalapala,Amit R,Spring 2024,Playoff,Semi Final,Wolfpack Icons,Loss,Spring2024SF.csv
+Arun A,ct,Godwin Mariadson,Amit R,Spring 2024,Playoff,Semi Final,Wolfpack Icons,Loss,Spring2024SF.csv
+Arun A,ctw,Jayanth Kalakuntla,Gagan N,Spring 2024,Playoff,Semi Final,Wolfpack Icons,Loss,Spring2024SF.csv
+Vishnu G,ct,Karthik Vadlamudi,Subramanya U,Spring 2024,Playoff,Semi Final,Wolfpack Icons,Loss,Spring2024SF.csv
+Garv C,ctw,Nahid Hossain,Gagan N,Spring 2024,Regular Season,N/A,Downtown Dynamitz,Win,Spring2024G1.csv
+Sri Ranga Reddy M,ct,Hari Krishna Pallem,Nitesh K,Spring 2024,Regular Season,N/A,Downtown Dynamitz,Win,Spring2024G1.csv
+Garv C,ctw,Upender Cheeti,Gagan N,Spring 2024,Regular Season,N/A,Downtown Dynamitz,Win,Spring2024G1.csv
+Garv C,ctw,Pavan Immaneni,Nitesh K,Spring 2024,Regular Season,N/A,Downtown Dynamitz,Win,Spring2024G1.csv
+Garv C,ctw,Kiran Pariti,Nitesh K,Spring 2024,Regular Season,N/A,Downtown Dynamitz,Win,Spring2024G1.csv
+Sri Ranga Reddy M,ct,Kiran Boddupalli,Srujan S,Spring 2024,Regular Season,N/A,Downtown Dynamitz,Win,Spring2024G1.csv
+Suchethan M,ct,Harsha Ramineedi,Chirag G,Spring 2024,Regular Season,N/A,Downtown Dynamitz,Win,Spring2024G1.csv
+Garv C,ctw,Aravind Singaravel,Chirag G,Spring 2024,Regular Season,N/A,Downtown Dynamitz,Win,Spring2024G1.csv
+Bibin B,ct,Islam Shahriar,Manjinder S,Spring 2024,Regular Season,N/A,BTAMU,Win,Spring2024G2.csv
+Jagdish P,ct,Pronob Biswas,Subramanya U,Spring 2024,Regular Season,N/A,BTAMU,Win,Spring2024G2.csv
+Jagdish P,ct,Faruque Hasan,Vishnu G,Spring 2024,Regular Season,N/A,BTAMU,Win,Spring2024G2.csv
+Jagdish P,ct,Mostafa Meraj Pasha,Vishnu G,Spring 2024,Regular Season,N/A,BTAMU,Win,Spring2024G2.csv
+Garv C,ctw,Mohammad Anis,Goutham C,Spring 2024,Regular Season,N/A,BTAMU,Win,Spring2024G2.csv
+Garv C,ctw,Salman Zahir,Subramanya U,Spring 2024,Regular Season,N/A,BTAMU,Win,Spring2024G2.csv
+Charles Ethan G,ct,Md Mojibur Rahman Redoy Akanda,Subramanya U,Spring 2024,Regular Season,N/A,BTAMU,Win,Spring2024G2.csv
+Garv C,ctw,Saidul Haque,Goutham C,Spring 2024,Regular Season,N/A,BTAMU,Win,Spring2024G2.csv
+Rahul R,ct,Akash Shakunala,Goutham C,Spring 2024,Regular Season,N/A,Just In Case,Win,Spring2024G3.csv
+Garv C,ctw,Krishna R G,Manjinder S,Spring 2024,Regular Season,N/A,Just In Case,Win,Spring2024G3.csv
+Garv C,ctw,Vineet Reddy,Manjinder S,Spring 2024,Regular Season,N/A,Just In Case,Win,Spring2024G3.csv
+Garv C,ctw,Nagarjuna Reddy Gujja,Subramanya U,Spring 2024,Regular Season,N/A,Just In Case,Win,Spring2024G3.csv
+Suriya B,ct,Deepak Reddy Chirthani,Goutham C,Spring 2024,Regular Season,N/A,Just In Case,Win,Spring2024G3.csv
+Rahul R,ct,Sai Kiran C,Goutham C,Spring 2024,Regular Season,N/A,Just In Case,Win,Spring2024G3.csv
+Arun A,ct,Chaitu Kandimalla,Sadesh C,Spring 2024,Regular Season,N/A,Bcc Legends,Tie,Spring2024G4.csv
+Gagan N,ct,Ap Sharma,Nishant P,Spring 2024,Regular Season,N/A,Bcc Legends,Tie,Spring2024G4.csv
+Gagan N,ctw,Sayujya Patil,Sohan M,Spring 2024,Regular Season,N/A,Bcc Legends,Tie,Spring2024G4.csv
+Sohan M,ctw,Venkat Birudala,Sutheshan Mayur S,Spring 2024,Regular Season,N/A,Bcc Legends,Tie,Spring2024G4.csv
+Sohan M,ro,Varun Gupta,nan,Spring 2024,Regular Season,N/A,Bcc Legends,Tie,Spring2024G4.csv
+Abu S,ctw,Rakesh Munnoor Raja,Garv C,Spring 2024,Regular Season,N/A,Rowdy Boys,Win,Spring2024G5.csv
+Amit R,ct,Chaitanya Kancharla,Garv C,Spring 2024,Regular Season,N/A,Rowdy Boys,Win,Spring2024G5.csv
+Gagan N,ct,Nagul Sharif Shaik,Vishnu G,Spring 2024,Regular Season,N/A,Rowdy Boys,Win,Spring2024G5.csv
+Abu S,ctw,Manjoor Shaik,Amit R,Spring 2024,Regular Season,N/A,Rowdy Boys,Win,Spring2024G5.csv
+Abu S,st,Vamsi Kommalapati,Sadesh C,Spring 2024,Regular Season,N/A,Rowdy Boys,Win,Spring2024G5.csv
+Gagan N,ct,Shaahil Paaloba,Amit R,Spring 2024,Regular Season,N/A,Rowdy Boys,Win,Spring2024G5.csv
+Abu S,ro,Manikanth Seethamraju,Amit R,Spring 2024,Regular Season,N/A,Rowdy Boys,Win,Spring2024G5.csv
+Abu S,ctw,Nasar Vali Shaik,Gagan N,Spring 2024,Regular Season,N/A,Rowdy Boys,Win,Spring2024G5.csv
+Abu S,ctw,Jikriya Shaik,Sadesh C,Spring 2024,Regular Season,N/A,Rowdy Boys,Win,Spring2024G5.csv
+Ravi Kishore B,ct,Emtiaz Mostafiz,Garv C,Spring 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Spring2024G6.csv
+Ravi Kishore B,ctw,Ali Ahsan,Nishant P,Spring 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Spring2024G6.csv
+Ravi Kishore B,ct,Rakib Ahmed,Sohan M,Spring 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Spring2024G6.csv
+Ravi Kishore B,ct,Shahad Munna,Sunil P,Spring 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Spring2024G6.csv
+Garv C,ct,Razin Haque,Ravi Kishore B,Spring 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Spring2024G6.csv
+Sunil P,ct,Dewan Sayeed,Ravi Kishore B,Spring 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Spring2024G6.csv
+Saad A,ct,Venkat Peram,Rohan D,Spring 2024,Regular Season,N/A,Falcons XI,Loss,Spring2024G7.csv
+Charles Ethan G,ctw,Suresh Lingineedi,Shahid K,Spring 2024,Regular Season,N/A,Falcons XI,Loss,Spring2024G7.csv
+Bilal I,ct,Vineel Kumar Reddy Kollu,Shahid K,Spring 2024,Regular Season,N/A,Falcons XI,Loss,Spring2024G7.csv
+Saad A,ct,Vineeth C,Shahid K,Spring 2024,Regular Season,N/A,Falcons XI,Loss,Spring2024G7.csv
+Charles Ethan G,ctw,Siva Gunnam,Shahid K,Spring 2024,Regular Season,N/A,Falcons XI,Loss,Spring2024G7.csv
+Charles Ethan G,ctw,Sriraja Krishnam Raju Edarapalli,Shahid K,Spring 2024,Regular Season,N/A,Falcons XI,Loss,Spring2024G7.csv
+Charles Ethan G,ctw,Kalyan Raju,Shahid K,Spring 2024,Regular Season,N/A,Falcons XI,Loss,Spring2024G7.csv
+Bernard S,ctw,Purushothamraju Addepalli,Roshaka R,Spring 2025,Playoff,Quarter Final,Falcons XI,Win,Spring2025QF.csv
+Subramanya U,ct,Bharath M,Archit S,Spring 2025,Playoff,Quarter Final,Falcons XI,Win,Spring2025QF.csv
+Bernard S,ctw,Manivannan Muruganandam,Shail P,Spring 2025,Playoff,Quarter Final,Falcons XI,Win,Spring2025QF.csv
+Bernard S,ctw,Shiva Reddy Baddam,Subramanya U,Spring 2025,Playoff,Quarter Final,Falcons XI,Win,Spring2025QF.csv
+Garv C,ct,Rakesh Munnoor Raja,Garv C,Spring 2025,Playoff,Quarter Final,Falcons XI,Win,Spring2025QF.csv
+Shail P,ct,Shashank Macha,Garv C,Spring 2025,Playoff,Quarter Final,Falcons XI,Win,Spring2025QF.csv
+Shail P,ct,Jayesh Bairi,Uday C,Spring 2025,Playoff,Quarter Final,Falcons XI,Win,Spring2025QF.csv
+Archit S,ctw,Kalyan Raju,Jeeva C,Spring 2025,Playoff,Quarter Final,Falcons XI,Win,Spring2025QF.csv
+Bernard S,ctw,Surendra Chatala,Roshaka R,Spring 2025,Playoff,Semi Final,Hashtag Indians,Loss,Spring2025SF.csv
+Sriram R,ct,Kiran Kumar Gunnammagari,Subramanya U,Spring 2025,Playoff,Semi Final,Hashtag Indians,Loss,Spring2025SF.csv
+Roshaka R,ct,Amarnath Reddy Pabhathi,Krrish p,Spring 2025,Playoff,Semi Final,Hashtag Indians,Loss,Spring2025SF.csv
+Roshaka R,ct,Amith Gudimella,Archit S,Spring 2025,Playoff,Semi Final,Hashtag Indians,Loss,Spring2025SF.csv
+Bernard S,ctw,Prasanna Kumar Vankayala,Archit S,Spring 2025,Playoff,Semi Final,Hashtag Indians,Loss,Spring2025SF.csv
+Bernard S,ctw,Ashok Reddy N B,Subramanya U,Spring 2025,Playoff,Semi Final,Hashtag Indians,Loss,Spring2025SF.csv
+Abu S,ctw,Manoj Kumar Lagumsani,Subramanya U,Spring 2025,Regular Season,N/A,Javelinas-genx,Win,Spring2025G1.csv
+Uday C,ct,Mani Kumar Reddy Boravelli,Subramanya U,Spring 2025,Regular Season,N/A,Javelinas-genx,Win,Spring2025G1.csv
+Nishanth M,ct,Pavan Nimmagadda,Garv C,Spring 2025,Regular Season,N/A,Javelinas-genx,Win,Spring2025G1.csv
+Suriya B,ct,Samar Yaragarla,Garv C,Spring 2025,Regular Season,N/A,Javelinas-genx,Win,Spring2025G1.csv
+Abu S,ctw,Supraj Suresha Amunje,Jeeva C,Spring 2025,Regular Season,N/A,Javelinas-genx,Win,Spring2025G1.csv
+Subramanya U,ct,Rakshith Reddy,Suriya B,Spring 2025,Regular Season,N/A,Javelinas-genx,Win,Spring2025G1.csv
+Ravi Kishore B,ct,Shanmukh Chouwdary,Suriya B,Spring 2025,Regular Season,N/A,Javelinas-genx,Win,Spring2025G1.csv
+Suriya B,ct,Ajay Muppalla,Ravi Kishore B,Spring 2025,Regular Season,N/A,Javelinas-genx,Win,Spring2025G1.csv
+Garv C,ct,Saiful Alam,Bernard S,Spring 2025,Regular Season,N/A,Houston Scorpions,Win,Spring2025G2.csv
+Swapnil C,ct,Diner M. Islam,Subramanya U,Spring 2025,Regular Season,N/A,Houston Scorpions,Win,Spring2025G2.csv
+Jagdish P,ctw,Wasim Choudhury,Subramanya U,Spring 2025,Regular Season,N/A,Houston Scorpions,Win,Spring2025G2.csv
+Swapnil C,ct,Tarakaram Ghanta,Bernard S,Spring 2025,Regular Season,N/A,Houston Scorpions,Win,Spring2025G2.csv
+Thisara W,ctw,Nasar Vali Shaik,Roshaka R,Spring 2025,Regular Season,N/A,Rowdy Boys,Loss,Spring2025G3.csv
+Uday C,ct,Vamsi Kommalapati,Shail P,Spring 2025,Regular Season,N/A,Rowdy Boys,Loss,Spring2025G3.csv
+Thisara W,ctw,Venkat Birudala,Roshaka R,Spring 2025,Regular Season,N/A,Rowdy Boys,Loss,Spring2025G3.csv
+Thisara W,st,Shaahil Paaloba,Shirak P,Spring 2025,Regular Season,N/A,Rowdy Boys,Loss,Spring2025G3.csv
+Aditya D,ct,Prabaharan Devadoss,Uday C,Spring 2025,Regular Season,N/A,QHRS,Win,Spring2025G4.csv
+Garv C,ct,Amol Mane,Aditya D,Spring 2025,Regular Season,N/A,QHRS,Win,Spring2025G4.csv
+Rajesh N,ro,Rathan Bhaskara,Uday C,Spring 2025,Regular Season,N/A,QHRS,Win,Spring2025G4.csv
+Subramanya U,ro,Hemant Paliwal,Garv C,Spring 2025,Regular Season,N/A,QHRS,Win,Spring2025G4.csv
+Krrish P,ct,Santosh Kumar,Aditya D,Spring 2025,Regular Season,N/A,QHRS,Win,Spring2025G4.csv
+Abu S,ro,Ashok Varma,Aneesh V,Spring 2025,Regular Season,N/A,Downtown Dynamitz,Win,Spring2025G5.csv
+Abu S,ctw,Kiran Boddupalli,Mahesh A,Spring 2025,Regular Season,N/A,Downtown Dynamitz,Win,Spring2025G5.csv
+Abu S,ct,Kiran Pariti,Aneesh V,Spring 2025,Regular Season,N/A,Downtown Dynamitz,Win,Spring2025G5.csv
+Roshaka R,ctw,Vinod Chandar,Bernard S,Spring 2025,Regular Season,N/A,Downtown Dynamitz,Win,Spring2025G5.csv
+Roshaka R,ctw,Pavan Immaneni,Bernard S,Spring 2025,Regular Season,N/A,Downtown Dynamitz,Win,Spring2025G5.csv
+Roshaka R,ctw,Satya S,Aneesh V,Spring 2025,Regular Season,N/A,Downtown Dynamitz,Win,Spring2025G5.csv
+Swapnil C,ctw,Raju Neelam,Uday C,Spring 2025,Regular Season,N/A,Downtown Dynamitz,Win,Spring2025G5.csv
+Sriram R,ct,Razin Haque,Roshaka R,Spring 2025,Regular Season,N/A,Houston Benchwarmers,Win,Spring2025G6.csv
+Garv C,ct,Mohammad Ruzlan Habib,Manjinder S,Spring 2025,Regular Season,N/A,Houston Benchwarmers,Win,Spring2025G6.csv
+Sohan M,ctw,Imran Khan,Archit S,Spring 2025,Regular Season,N/A,Houston Benchwarmers,Win,Spring2025G6.csv
+Sohan M,ro,Fuad Hassan,nan,Spring 2025,Regular Season,N/A,Houston Benchwarmers,Win,Spring2025G6.csv
+Sohan M,ctw,Emtiaz Mostafiz,Archit S,Spring 2025,Regular Season,N/A,Houston Benchwarmers,Win,Spring2025G6.csv
+Roshaka R,ctw,Md Sajjad Hossain Tusher,Sohan M,Spring 2025,Regular Season,N/A,Houston Benchwarmers,Win,Spring2025G6.csv
+Garv C,ct,Hasan Khan,Manjinder S,Spring 2025,Regular Season,N/A,The Legends,Win,Spring2025G7.csv
+Aijaz C,ct,Adnan Hasan,Shail P,Spring 2025,Regular Season,N/A,The Legends,Win,Spring2025G7.csv
+Nishant P,ctw,Omair Farooqui,Shail P,Spring 2025,Regular Season,N/A,The Legends,Win,Spring2025G7.csv
+Roshaka R,ct,Saifee Siddiqui,Niranjan K,Spring 2025,Regular Season,N/A,The Legends,Win,Spring2025G7.csv
+Shail P,ct,Salman Farooqui,Garv C,Spring 2025,Regular Season,N/A,The Legends,Win,Spring2025G7.csv
+Nishant P,ctw,Zeeshan Shamim,Niranjan K,Spring 2025,Regular Season,N/A,The Legends,Win,Spring2025G7.csv
+Shail P,ct,Kashif Mir,Aijaz C,Spring 2025,Regular Season,N/A,The Legends,Win,Spring2025G7.csv
+Nishant P,ctw,Jameel Rahman,Niranjan K,Spring 2025,Regular Season,N/A,The Legends,Win,Spring2025G7.csv
+Roshaka R,ct,Tanay Chowdhury,Avinash P,Spring 2026,Playoff,Final,Houston Scorpions,Win,Spring2026Finals.csv
+Bernard S,ctw,Arefin Saikat,Vamsi K,Spring 2026,Playoff,Final,Houston Scorpions,Win,Spring2026Finals.csv
+Bernard S,ctw,Tarakaram Ghanta,Vamsi K,Spring 2026,Playoff,Final,Houston Scorpions,Win,Spring2026Finals.csv
+Rushang S,ct,Morshad Ahmed,Garv C,Spring 2026,Playoff,Final,Houston Scorpions,Win,Spring2026Finals.csv
+Bernard S,ctw,Saiful Alam,Roshaka R,Spring 2026,Playoff,Final,Houston Scorpions,Win,Spring2026Finals.csv
+Bernard S,ctw,Kushal Ramakrishnappa,Garv C,Spring 2026,Playoff,Final,Houston Scorpions,Win,Spring2026Finals.csv
+Bernard S,ctw,Mohammed Kaja Nawaz L J,Garv C,Spring 2026,Playoff,Final,Houston Scorpions,Win,Spring2026Finals.csv
+Rushang S,ct,Harsha Kallori,Garv C,Spring 2026,Playoff,Final,Houston Scorpions,Win,Spring2026Finals.csv
+Bernard S,ctw,Md Riaj Uddin,Aarnav P,Spring 2026,Playoff,Final,Houston Scorpions,Win,Spring2026Finals.csv
+Shail P,ct,Imtiaz Nur Peaal,Garv C,Spring 2026,Playoff,Final,Houston Scorpions,Win,Spring2026Finals.csv
+Vamsi K,ct,Gautham Kanaparthy,Avinash P,Spring 2026,Playoff,Quarter Final,Stallions,Win,Spring2026QF.csv
+Rushang S,ct,Sakya K,Vamsi K,Spring 2026,Playoff,Quarter Final,Stallions,Win,Spring2026QF.csv
+Roshaka R,ct,Uday Jadhav,Subramanya U,Spring 2026,Playoff,Quarter Final,Stallions,Win,Spring2026QF.csv
+Subramanya U,ct,Karthik Vadlamudi,Avinash P,Spring 2026,Playoff,Quarter Final,Stallions,Win,Spring2026QF.csv
+Bernard S,ctw,Phani Toutam,Vamsi K,Spring 2026,Playoff,Quarter Final,Stallions,Win,Spring2026QF.csv
+Uday C,ct,Sravan Damacharla,Avinash P,Spring 2026,Playoff,Quarter Final,Stallions,Win,Spring2026QF.csv
+Rushang S,ro,Madhav Pati,Roshaka R,Spring 2026,Playoff,Quarter Final,Stallions,Win,Spring2026QF.csv
+Bernard S,ctw,Ramesh Marri,Vamsi K,Spring 2026,Playoff,Quarter Final,Stallions,Win,Spring2026QF.csv
+Vamsi K,ct,Purushothamraju Addepalli,Garv C,Spring 2026,Playoff,Semi Final,Falcons XI,Win,Spring2026SF.csv
+Bernard S,ctw,Shiva Prasad,Avinash P,Spring 2026,Playoff,Semi Final,Falcons XI,Win,Spring2026SF.csv
+Roshaka R,ct,Veerababu Anupoju,Garv C,Spring 2026,Playoff,Semi Final,Falcons XI,Win,Spring2026SF.csv
+Aarnav P,ct,Manivannan Muruganandam,Avinash P,Spring 2026,Playoff,Semi Final,Falcons XI,Win,Spring2026SF.csv
+Aarnav P,ct,Shashank Macha,Avinash P,Spring 2026,Playoff,Semi Final,Falcons XI,Win,Spring2026SF.csv
+Garv C,ct,Girish Mopuru,Vamsi K,Spring 2026,Playoff,Semi Final,Falcons XI,Win,Spring2026SF.csv
+Bernard S,ctw,Shiva Reddy Baddam,Aarnav P,Spring 2026,Playoff,Semi Final,Falcons XI,Win,Spring2026SF.csv
+Aarnav P,ct,Kalyan Raju,Roshaka R,Spring 2026,Playoff,Semi Final,Falcons XI,Win,Spring2026SF.csv
+Shail P,ct,Hameedulla Shaik,Vamsi K,Spring 2026,Playoff,Semi Final,Falcons XI,Win,Spring2026SF.csv
+Uday C,ct,Jubaer Alam,Manjinder S,Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Spring2026G1.csv
+Aarnav P,ct,Zubayed Rakib,Aarnav P,Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Spring2026G1.csv
+Uday C,ct,Julfiker Shovon,Subramanya U,Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Spring2026G1.csv
+Garv C,ctw,Shahad Munna,Uday C,Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Spring2026G1.csv
+Garv C,ctw,Pawan Pawan,Subramanya U,Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Spring2026G1.csv
+Vamsi K,ct,Gupta Gamini,Rishabh V,Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Spring2026G1.csv
+Garv C,ctw,Vamshi Tirunagari,Uday C,Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Spring2026G1.csv
+Vamsi K,ct,Kd - Kannan Dhandapani,Uday C,Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Spring2026G1.csv
+Garv C,ctw,Emtiaz Mostafiz,Aarnav P,Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Spring2026G1.csv
+Garv C,ro,Shah Choudhury,Pratyush V,Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Spring2026G1.csv
+Garv C,ctw,Pranav Reddy,Shail P,Spring 2026,Regular Season,N/A,Javelinas-genx,Win,Spring2026G2.csv
+Garv C,ro,Goutham Chilumula,Arun A,Spring 2026,Regular Season,N/A,Javelinas-genx,Win,Spring2026G2.csv
+Garv C,ctw,Rahul Reddy,Shail P,Spring 2026,Regular Season,N/A,Javelinas-genx,Win,Spring2026G2.csv
+Garv C,ctw,Hemanth Dasari,Shail P,Spring 2026,Regular Season,N/A,Javelinas-genx,Win,Spring2026G2.csv
+Uday C,ct,Samar Yaragarla,Shail P,Spring 2026,Regular Season,N/A,Javelinas-genx,Win,Spring2026G2.csv
+Arun A,ct,Vishnu Gardimalla,Vamsi K,Spring 2026,Regular Season,N/A,Javelinas-genx,Win,Spring2026G2.csv
+Garv C,ctw,Prudhvi Kandimalla,Vamsi K,Spring 2026,Regular Season,N/A,Javelinas-genx,Win,Spring2026G2.csv
+Uday C,ct,Aswant Ganesh Bodapati,Thisara I,Spring 2026,Regular Season,N/A,OG'S,Win,Spring2026G3.csv
+Udesh J,ct,Satish Gandreddy,Uday C,Spring 2026,Regular Season,N/A,OG'S,Win,Spring2026G3.csv
+Shail P,ct,Adnan Hasan,Uday C,Spring 2026,Regular Season,N/A,The Legends,No Result,Spring2026G5.csv
+Garv C,ct,Muhammad Ammad Khan,Nishant P,Spring 2026,Regular Season,N/A,The Legends,No Result,Spring2026G5.csv
+Arun A,ctw,Manjunath Manik,Avinash P,Spring 2026,Regular Season,N/A,QHRS,Win,Spring2026G6.csv
+Rushang S,ct,Hamza Bangesh,Garv C,Spring 2026,Regular Season,N/A,QHRS,Win,Spring2026G6.csv
+Arun A,ctw,Amol Mane,Avinash P,Spring 2026,Regular Season,N/A,QHRS,Win,Spring2026G6.csv
+Garv C,ct,Swapnil Gorhe,Shail P,Spring 2026,Regular Season,N/A,QHRS,Win,Spring2026G6.csv
+Ojas B,ct,Nasar Shaik,Avinash P,Spring 2026,Regular Season,N/A,QHRS,Win,Spring2026G6.csv
+Avinash P,ct,Vinay Martoori,Shail P,Spring 2026,Regular Season,N/A,QHRS,Win,Spring2026G6.csv
+Avinash P,ct,Milin Patel,Garv C,Spring 2026,Regular Season,N/A,QHRS,Win,Spring2026G6.csv
+Kavindu P,ct,Saravanakumar Selvaraj,Uday C,Spring 2026,Regular Season,N/A,QHRS,Win,Spring2026G6.csv
+Sunil P,ctw,Robin M Varughese,Ravi Kishore B,Summer 2024,Playoff,Final,Houston Scorpions,Loss,Summer2024Finals.csv
+Substitute,ct,Md Afzal Hossain,Manjinder S,Summer 2024,Playoff,Final,Houston Scorpions,Loss,Summer2024Finals.csv
+Ravi Kishore B,ct,Mostafa Meraj Pasha,Roshaka R,Summer 2024,Playoff,Final,Houston Scorpions,Loss,Summer2024Finals.csv
+Substitute,ct,Morshad Ahmed,Manjinder S,Summer 2024,Playoff,Final,Houston Scorpions,Loss,Summer2024Finals.csv
+Ravi Kishore B,ct,Sai Sangaraju,Roshaka R,Summer 2024,Playoff,Final,Houston Scorpions,Loss,Summer2024Finals.csv
+Uday C,ct,Tanay Chowdhury,Manjinder S,Summer 2024,Playoff,Final,Houston Scorpions,Loss,Summer2024Finals.csv
+Sunil P,st,Abu Sayeed,Sohan M,Summer 2024,Playoff,Final,Houston Scorpions,Loss,Summer2024Finals.csv
+Sohan M,ct,Faz Imtiaz,Sohan M,Summer 2024,Playoff,Final,Houston Scorpions,Loss,Summer2024Finals.csv
+Sohan M,ctw,Karthik Vadlamudi,Gaurav M,Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,Summer2024QF.csv
+Garv C,ct,Kusal Fernando,Amit R,Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,Summer2024QF.csv
+Arun A,ctw,Prashanth Manne,Subramanya U,Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,Summer2024QF.csv
+Arun A,ctw,Vihaan Kamthe-Shete,Sohan M,Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,Summer2024QF.csv
+Uday C,ct,Rohit Bade,Subramanya U,Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,Summer2024QF.csv
+Sohan M,ct,Rajesh Pant,Roshaka R,Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,Summer2024QF.csv
+Bilal T,ct,Arjun Devarapalli,Amit R,Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,Summer2024QF.csv
+Ravi Kishore B,ct,Ravi Yerramsetty,Gaurav M,Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,Summer2024QF.csv
+Arun A,ctw,Naga Dinesh Annapareddy,Gaurav M,Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,Summer2024QF.csv
+Sunil P,ctw,Vamsi Kommalapati,Manjinder S,Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,Summer2024SF.csv
+Sunil P,ctw,Shiva Prasad,Nitesh K,Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,Summer2024SF.csv
+Vishnu G,ct,Chaitanya Kancharla,Nitesh K,Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,Summer2024SF.csv
+Sunil P,ro,Ashwin Tandon,Sohan M,Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,Summer2024SF.csv
+Sunil P,ctw,Manjoor Shaik,Subramanya U,Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,Summer2024SF.csv
+Sunil P,ctw,Nagul Sharif Shaik,Sohan M,Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,Summer2024SF.csv
+Sunil P,ctw,Nasar Vali Shaik,Sohan M,Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,Summer2024SF.csv
+Garv C,ct,Shaahil Paaloba,Sohan M,Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,Summer2024SF.csv
+Manjinder S,ro,Alpesh Dadhalwala,Suchethan M,Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,Summer2024SF.csv
+Shreyan S,ct,Manjoor Shaik,Bibin B,Summer 2024,Regular Season,N/A,Rowdy Boys,Loss,Summer2024G1.csv
+Garv C,ct,Nasar Vali Shaik,Bibin B,Summer 2024,Regular Season,N/A,Rowdy Boys,Loss,Summer2024G1.csv
+Sohan M,ctw,Shiva Prasad,Shahid K,Summer 2024,Regular Season,N/A,Rowdy Boys,Loss,Summer2024G1.csv
+Shayaan S,ct,Nagul Sharif Shaik,Shahzad A,Summer 2024,Regular Season,N/A,Rowdy Boys,Loss,Summer2024G1.csv
+Shreyan S,ct,Abbas Pathan,Garv C,Summer 2024,Regular Season,N/A,Rowdy Boys,Loss,Summer2024G1.csv
+Srinivasarao K,ct,Masood Mohammad,Bilal T,Summer 2024,Regular Season,N/A,Bth,Win,Summer2024G2.csv
+Uday C,ct,Adnanul Karim,Nitesh K,Summer 2024,Regular Season,N/A,Bth,Win,Summer2024G2.csv
+Srinivasarao K,ct,Tanim Choudhury,Nitesh K,Summer 2024,Regular Season,N/A,Bth,Win,Summer2024G2.csv
+Garv C,ct,Khaled Hassan,Nishant P,Summer 2024,Regular Season,N/A,Bth,Win,Summer2024G2.csv
+Pervinder S,ct,Ashraful Haque,Nishant P,Summer 2024,Regular Season,N/A,Bth,Win,Summer2024G2.csv
+Uday C,ct,Yesdani Shaik,Nishant P,Summer 2024,Regular Season,N/A,Bth,Win,Summer2024G2.csv
+Uday C,ct,Moshud Choudhury,Nishant P,Summer 2024,Regular Season,N/A,Bth,Win,Summer2024G2.csv
+Ravi Kishore B,st,Sadil Ahmed,Nitesh K,Summer 2024,Regular Season,N/A,Bth,Win,Summer2024G2.csv
+Harish P,ro,Shamnun Muhebb Ovee,nan,Summer 2024,Regular Season,N/A,Bth,Win,Summer2024G2.csv
+Nishant P,ct,Kushal P,Uday C,Summer 2024,Regular Season,N/A,Downtown Dynamitz,Win,Summer2024G4.csv
+Sunil P,ctw,Kiran Boddupalli,Nitesh K,Summer 2024,Regular Season,N/A,Downtown Dynamitz,Win,Summer2024G4.csv
+Suchethan M,ct,Harsha Ramineedi,Uday C,Summer 2024,Regular Season,N/A,Downtown Dynamitz,Win,Summer2024G4.csv
+Roshaka R,ct,Ashok Varma,Harish P,Summer 2024,Regular Season,N/A,Downtown Dynamitz,Win,Summer2024G4.csv
+Sunil P,ctw,Upender Cheeti,Uday C,Summer 2024,Regular Season,N/A,Downtown Dynamitz,Win,Summer2024G4.csv
+Sunil P,ctw,Giri Mullandram,Uday C,Summer 2024,Regular Season,N/A,Downtown Dynamitz,Win,Summer2024G4.csv
+Sunil P,ctw,Ashok Kolluru,Uday C,Summer 2024,Regular Season,N/A,Downtown Dynamitz,Win,Summer2024G4.csv
+Gohar A,ct,Krishna R G,Uday C,Summer 2024,Regular Season,N/A,Just In Case,Win,Summer2024G5.csv
+Gohar A,ct,Deepak Reddy Chirthani,Gohar A,Summer 2024,Regular Season,N/A,Just In Case,Win,Summer2024G5.csv
+Garv C,ctw,Karthik Grandhala,Harish P,Summer 2024,Regular Season,N/A,Just In Case,Win,Summer2024G5.csv
+Shayaan S,ct,Santhosh Chary,Emilio S,Summer 2024,Regular Season,N/A,Just In Case,Win,Summer2024G5.csv
+Uday C,ct,Vamshi Tirunagari,Gohar A,Summer 2024,Regular Season,N/A,Just In Case,Win,Summer2024G5.csv
+Uday C,ct,Akash Shakunala,Vishnu G,Summer 2024,Regular Season,N/A,Just In Case,Win,Summer2024G5.csv
+Garv C,ctw,Mamoon Malik,Amit R,Summer 2024,Regular Season,N/A,Just In Case,Win,Summer2024G5.csv
+Uday C,ct,Razin Haque,Nitesh K,Summer 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Summer2024G6.csv
+Nitesh K,ct,Julfiker Shovon,Uday C,Summer 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Summer2024G6.csv
+Sunil P,ctw,Imran Khan,Subramanya U,Summer 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Summer2024G6.csv
+Sunil P,ctw,Shahad Munna,Chirag G,Summer 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Summer2024G6.csv
+Sunil P,ctw,Mohammad Ruzlan Habib,Chirag G,Summer 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Summer2024G6.csv
+Uday C,ct,Emtiaz Mostafiz,Subramanya U,Summer 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Summer2024G6.csv
+Uday C,ro,Md Touhidul Islam,Subramanya U,Summer 2024,Regular Season,N/A,Houston Benchwarmers,Loss,Summer2024G6.csv
+Bernard S,ctw,Manjoor Shaik,Aneesh V,Summer 2025,Playoff,Final,Rowdy Boys,Win,Summer2025Finals.csv
+Shail P,ct,Sadesh Chandana,Aneesh V,Summer 2025,Playoff,Final,Rowdy Boys,Win,Summer2025Finals.csv
+Subramanya U,ct,Devendra Singh,Aneesh V,Summer 2025,Playoff,Final,Rowdy Boys,Win,Summer2025Finals.csv
+Bernard S,ctw,Vamsi Kommalapati,Aneesh V,Summer 2025,Playoff,Final,Rowdy Boys,Win,Summer2025Finals.csv
+Kavindu P,ct,Chaitanya Kancharla,Bernard S,Summer 2025,Playoff,Final,Rowdy Boys,Win,Summer2025Finals.csv
+Kavindu P,ct,Ashwin Tandon,Shail P,Summer 2025,Playoff,Final,Rowdy Boys,Win,Summer2025Finals.csv
+Jeeva C,ct,Jikriya Shaik,Bernard S,Summer 2025,Playoff,Final,Rowdy Boys,Win,Summer2025Finals.csv
+Bernard S,ctw,Imran Khan,Avinash P,Summer 2025,Playoff,Quarter Final,Bth,Win,Summer2025QF.csv
+Jeeva C,ct,Masood Mohammad,Uday C,Summer 2025,Playoff,Quarter Final,Bth,Win,Summer2025QF.csv
+Aarnav P,ct,Abeer Ahmed,Avinash P,Summer 2025,Playoff,Quarter Final,Bth,Win,Summer2025QF.csv
+Bernard S,ctw,Tanim Choudhury,Subramanya U,Summer 2025,Playoff,Quarter Final,Bth,Win,Summer2025QF.csv
+Bernard S,ctw,Ashraful Haque,Aarnav P,Summer 2025,Playoff,Quarter Final,Bth,Win,Summer2025QF.csv
+Jeeva C,ct,Shamnun Muhebb Ovee,Bernard S,Summer 2025,Playoff,Quarter Final,Bth,Win,Summer2025QF.csv
+Garv C,ct,Hassan Khalid,Bernard S,Summer 2025,Playoff,Quarter Final,Bth,Win,Summer2025QF.csv
+Bernard S,ctw,Debloke Maitra,Roshaka R,Summer 2025,Playoff,Semi Final,Champion CC,Win,Summer2025SF.csv
+Bernard S,ctw,Debasish Das,Avinash P,Summer 2025,Playoff,Semi Final,Champion CC,Win,Summer2025SF.csv
+Bernard S,ctw,Basit Ali,Roshaka R,Summer 2025,Playoff,Semi Final,Champion CC,Win,Summer2025SF.csv
+Aarnav P,ct,Taher Mohammed,Avinash P,Summer 2025,Playoff,Semi Final,Champion CC,Win,Summer2025SF.csv
+Bernard S,ctw,Omar Bangash,Avinash P,Summer 2025,Playoff,Semi Final,Champion CC,Win,Summer2025SF.csv
+Bernard S,ctw,Vinay Padala,Roshaka R,Summer 2025,Playoff,Semi Final,Champion CC,Win,Summer2025SF.csv
+Garv C,ct,Kiran Kumar Reddy Suram,Uday C,Summer 2025,Regular Season,N/A,Bcc Legends,Win,Summer2025G1.csv
+Shiva P,ct,Joe Alenchery,Aarnav P,Summer 2025,Regular Season,N/A,Bcc Legends,Win,Summer2025G1.csv
+Thisara W,ctw,Raja Palla,Roshaka R,Summer 2025,Regular Season,N/A,Bcc Legends,Win,Summer2025G1.csv
+Thisara W,ro,Govardhan Kandula,Aarnav P,Summer 2025,Regular Season,N/A,Bcc Legends,Win,Summer2025G1.csv
+Thisara W,ctw,Faraaz Adil,Aijaz C,Summer 2025,Regular Season,N/A,Bcc Legends,Win,Summer2025G1.csv
+Aijaz C,ct,Satish Gandreddy,Aarnav P,Summer 2025,Regular Season,N/A,Bcc Legends,Win,Summer2025G1.csv
+Shiva P,ctw,Eswar D,Avinash P,Summer 2025,Regular Season,N/A,Bcc Legends,Win,Summer2025G1.csv
+Aijaz C,ct,Jacob Tim,Kavindu P,Summer 2025,Regular Season,N/A,Bcc Legends,Win,Summer2025G1.csv
+Aijaz C,ct,Gnaneswar Tummala,Garv C,Summer 2025,Regular Season,N/A,Bcc Legends,Win,Summer2025G1.csv
+Geroge I,ctw,Shawal Siddique,Uday C,Summer 2025,Regular Season,N/A,Houston Titans,Win,Summer2025G2.csv
+Geroge I,ctw,Shabab Hannan,Uday C,Summer 2025,Regular Season,N/A,Houston Titans,Win,Summer2025G2.csv
+Jeeva C,ct,Chirag Bhagat,Harish P,Summer 2025,Regular Season,N/A,Houston Titans,Win,Summer2025G2.csv
+Subramanya U,ct,Abhay Goyal,Jordaine H,Summer 2025,Regular Season,N/A,Houston Titans,Win,Summer2025G2.csv
+Geroge I,ctw,Md Shoriful Islam,Jordaine H,Summer 2025,Regular Season,N/A,Houston Titans,Win,Summer2025G2.csv
+Geroge I,ro,Muhammad Moiz Nadeem,Garv C,Summer 2025,Regular Season,N/A,Houston Titans,Win,Summer2025G2.csv
+Emilio S,ct,Harsha Harsha,Emilio S,Summer 2025,Regular Season,N/A,Houston Titans,Win,Summer2025G2.csv
+Harish P,ct,Shah Choudhury,Shiva P,Summer 2025,Regular Season,N/A,Houston Titans,Win,Summer2025G2.csv
+Uday C,ct,Aninda Nandy,Emilio S,Summer 2025,Regular Season,N/A,Houston Titans,Win,Summer2025G2.csv
+Kavindu P,ct,Morshad Ahmed,Roshaka R,Summer 2025,Regular Season,N/A,Houston Scorpions,Win,Summer2025G3.csv
+Roshaka R,ctw,Saiful Alam,Aneesh V,Summer 2025,Regular Season,N/A,Houston Scorpions,Win,Summer2025G3.csv
+Manjinder S,ro,Shanto Roy,Roshaka R,Summer 2025,Regular Season,N/A,Houston Scorpions,Win,Summer2025G3.csv
+Aneesh V,ctw,Arifur Rahman,Roshaka R,Summer 2025,Regular Season,N/A,Houston Scorpions,Win,Summer2025G3.csv
+Roshaka R,ctw,Dewan Sayeed,Aneesh V,Summer 2025,Regular Season,N/A,Houston Scorpions,Win,Summer2025G3.csv
+Sohan M,ctw,Uday Jadhav,Uday C,Summer 2025,Regular Season,N/A,Stallions,Win,Summer2025G4.csv
+Aarnav P,ctw,Kalyan Chakravarthy Chandaluri,Sohan M,Summer 2025,Regular Season,N/A,Stallions,Win,Summer2025G4.csv
+Sohan M,ctw,Sai Sangaraju,Aarnav P,Summer 2025,Regular Season,N/A,Stallions,Win,Summer2025G4.csv
+Garv C,ct,Ashok Venkatachalaiah,Sohan M,Summer 2025,Regular Season,N/A,Stallions,Win,Summer2025G4.csv
+Garv C,ct,Phani Toutam,Aarnav P,Summer 2025,Regular Season,N/A,Stallions,Win,Summer2025G4.csv
+Sohan M,ctw,Ramesh Marri,Garv C,Summer 2025,Regular Season,N/A,Stallions,Win,Summer2025G4.csv
+Aarnav P,ctw,Jatin Jain,Sohan M,Summer 2025,Regular Season,N/A,Stallions,Win,Summer2025G4.csv
+Sohan M,ctw,Vijay Nagam,Garv C,Summer 2025,Regular Season,N/A,Stallions,Win,Summer2025G4.csv
+Aarnav P,ctw,Plassly Dcunha,Sohan M,Summer 2025,Regular Season,N/A,Stallions,Win,Summer2025G4.csv
+Bernard S,ctw,Mohammad Ruzlan Habib,Shail P,Summer 2025,Regular Season,N/A,BTAMU,Win,Summer2025G5.csv
+Roshaka R,ct,Mostafa Meraj Pasha,Shail P,Summer 2025,Regular Season,N/A,BTAMU,Win,Summer2025G5.csv
+Archit S,ctw,Shakil Arman,Aneesh V,Summer 2025,Regular Season,N/A,BTAMU,Win,Summer2025G5.csv
+Shail P,ro,Fahim Khan,Bernard S,Summer 2025,Regular Season,N/A,BTAMU,Win,Summer2025G5.csv
+Archit S,ctw,Mohammad Anis,Shail P,Summer 2025,Regular Season,N/A,BTAMU,Win,Summer2025G5.csv
+Shail P,ct,Muhammad Tarequl Islam,Archit S,Summer 2025,Regular Season,N/A,BTAMU,Win,Summer2025G5.csv
+Harish P,ct,Sakib Mahmud,Archit S,Summer 2025,Regular Season,N/A,BTAMU,Win,Summer2025G5.csv
+Garv C,ro,Faruque Hasan,Roshaka R,Summer 2025,Regular Season,N/A,BTAMU,Win,Summer2025G5.csv
+Harish P,ct,Kotesh Alugubelli,Tanmay S,Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Summer2025G6.csv
+Shiva Reddy B,ctw,Jyothi Krishna Bheema,Harish P,Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Summer2025G6.csv
+Sriram R,ct,Chandu Singam,Uday C,Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Summer2025G6.csv
+Arun A,ct,Samar Yaragarla,Uday C,Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Summer2025G6.csv
+Tanmay S,ct,Sunil Swarna,Uday C,Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Summer2025G6.csv
+Nishant P,st,Prudhvi Kandimalla,Pratyush V,Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Summer2025G6.csv
+Shiva Reddy B,ro,Dheeraj Rangareddy,Sriram R,Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Summer2025G6.csv
+Garv C,ctw,Dhanush Rekhala,Nishant P,Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Summer2025G6.csv
+Nishant P,st,Ajay Muppalla,Harish P,Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Summer2025G6.csv
+Nishant P,st,Sivaji Telaprolu,Garv C,Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Summer2025G6.csv
+Ojas B,ct,Atif Syed,Manjinder S,Summer 2025,Regular Season,N/A,Wolfpack Icons,Loss,Summer2025G7.csv
+Bibin B,ct,Rohit Bade,Uday C,Summer 2025,Regular Season,N/A,Wolfpack Icons,Loss,Summer2025G7.csv
+Jagdish P,ctw,Karthik Vadlamudi,Uday C,Summer 2025,Regular Season,N/A,Wolfpack Icons,Loss,Summer2025G7.csv
+Jagdish P,ctw,Deepak Paruchuri,Archit S,Summer 2025,Regular Season,N/A,Wolfpack Icons,Loss,Summer2025G7.csv
+Uday C,ct,Kusal Fernando,Archit S,Summer 2025,Regular Season,N/A,Wolfpack Icons,Loss,Summer2025G7.csv
+Harish B,ctw,Venky Viskha,Uday C,Summer 2026,Regular Season,N/A,Downtown Dynamitz,Loss,Summer2026G1.csv
+Kavindu P,ct,Kiran Pariti,Garv C,Summer 2026,Regular Season,N/A,Downtown Dynamitz,Loss,Summer2026G1.csv
+Harish B,ctw,Kiran Kondapalli,Uday C,Summer 2026,Regular Season,N/A,Downtown Dynamitz,Loss,Summer2026G1.csv
+Kavindu P,ct,Shiva Goud,Emilio S,Summer 2026,Regular Season,N/A,Downtown Dynamitz,Loss,Summer2026G1.csv
+Uday C,ct,Pranav Reddy,Harish P,Summer 2026,Regular Season,N/A,Javelinas-genx,Win,Summer2026G2.csv
+Roshaka R,ct,Rahul Reddy,Harish P,Summer 2026,Regular Season,N/A,Javelinas-genx,Win,Summer2026G2.csv
+Geroge I,ctw,Sujith Pasupuleti,Harish P,Summer 2026,Regular Season,N/A,Javelinas-genx,Win,Summer2026G2.csv
+Roshaka R,ct,Satish Adapa,Harish P,Summer 2026,Regular Season,N/A,Javelinas-genx,Win,Summer2026G2.csv
+Kusal F,ct,Pavan Soodireddy,Jeeva C,Summer 2026,Regular Season,N/A,Javelinas-genx,Win,Summer2026G2.csv
+Geroge I,ctw,Vivek Varma Manthena,Roshaka R,Summer 2026,Regular Season,N/A,Javelinas-genx,Win,Summer2026G2.csv
+Geroge I,ctw,Chandra Sekhar Malleswarapu,Roshaka R,Summer 2026,Regular Season,N/A,Javelinas-genx,Win,Summer2026G2.csv
+Roshaka R,ct,Nitesh Kosuri,Kusal F,Summer 2026,Regular Season,N/A,Javelinas-genx,Win,Summer2026G2.csv
+Garv C,ro,Santhosh Nama,Geroge I,Summer 2026,Regular Season,N/A,Javelinas-genx,Win,Summer2026G2.csv
+Archit S,ctw,Razin Haque,Garv C,Summer 2026,Regular Season,N/A,Houston Titans,Win,Summer2026G3.csv
+Archit S,ctw,Shahzad Ahmed,Bernard S,Summer 2026,Regular Season,N/A,Houston Titans,Win,Summer2026G3.csv
+Archit S,ctw,Arifur Rahman,Avinash P,Summer 2026,Regular Season,N/A,Houston Titans,Win,Summer2026G3.csv
+Rushang S,ct,Bharat Bhushan Singh,Rishabh V,Summer 2026,Regular Season,N/A,Houston Titans,Win,Summer2026G3.csv
+Garv C,ct,Aijaz Nazir,Uday C,Summer 2026,Regular Season,N/A,Houston Titans,Win,Summer2026G3.csv
+Archit S,ct,Dhurjhoti Saha,Emilio S,Summer 2026,Regular Season,N/A,Houston Titans,Win,Summer2026G3.csv
+Archit S,ct,Sandeep Reddy Kukunuru,Aijaz C,Summer 2026,Regular Season,N/A,Houston Titans,Win,Summer2026G3.csv
+Garv C,ctw,Dewan Sayeed,Uday C,Summer 2026,Regular Season,N/A,Houston Titans,Win,Summer2026G3.csv
+Rishabh V,ro,Akhil T,Rushang S,Summer 2026,Regular Season,N/A,Houston Titans,Win,Summer2026G3.csv
+Uday C,ct,Nabeel Ashraf,Sohan M,Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,Summer2026G5.csv
+Harish B,ct,Hammmad Ahmed,Shail P,Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,Summer2026G5.csv
+Pratyush V,ctw,Basit Ali,Jeeva C,Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,Summer2026G5.csv
+Garv C,ctw,Muhtadi Tanim,Sohan M,Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,Summer2026G5.csv
+Shail P,ct,Nahid Hossain,Jeeva C,Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,Summer2026G5.csv
+Uday C,ct,Syed Khizar Ali,Jeeva C,Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,Summer2026G5.csv
+Harish B,ct,Hassan Khalid,Jeeva C,Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,Summer2026G5.csv
+Sohan M,ct,Shamnun Muhebb Ovee,Jeeva C,Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,Summer2026G5.csv
+Charles Ethan G,ct,Sumon Islam,Jeeva C,Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,Summer2026G5.csv
+Harish B,ctw,Tanuj Kumar,Pubudu P,Summer 2026,Regular Season,N/A,Stallions,Win,Summer2026G6.csv
+Pratyush V,ct,Devendra Singh,Pubudu P,Summer 2026,Regular Season,N/A,Stallions,Win,Summer2026G6.csv
+Harish B,ctw,Uday Jadhav,Sisindu L,Summer 2026,Regular Season,N/A,Stallions,Win,Summer2026G6.csv
+Nalith P,ct,Sakya K,Uday C,Summer 2026,Regular Season,N/A,Stallions,Win,Summer2026G6.csv
+Rishabh V,ct,Arvind Reddy,Pubudu P,Summer 2026,Regular Season,N/A,Stallions,Win,Summer2026G6.csv
+Harish B,ctw,Gautham Kanaparthy,Pratyush V,Summer 2026,Regular Season,N/A,Stallions,Win,Summer2026G6.csv
+Nalith P,ct,Phani Toutam,Shail P,Summer 2026,Regular Season,N/A,Stallions,Win,Summer2026G6.csv
+Harish B,ctw,Avinash Naidu,Rishabh V,Summer 2026,Regular Season,N/A,Stallions,Win,Summer2026G6.csv
+Kavindu P,ct,Jatin Jain,Uday C,Summer 2026,Regular Season,N/A,Stallions,Win,Summer2026G6.csv
+Pratyush V,ct,Sravan Damacharla,Pubudu P,Summer 2026,Regular Season,N/A,Stallions,Win,Summer2026G6.csv

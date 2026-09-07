@@ -13,7 +13,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 logo_path = "assets/CWCCNEWLOGO.jpeg"
 
 # --- PAGE SETUP & GOLD/BLACK THEME ---
-st.set_page_config(page_title="Warriorz Player Stats", layout="wide")
+st.set_page_config(page_title="Warriorz Player Stats", page_icon="🏏", layout="wide")
 
 # Custom CSS
 st.markdown("""
@@ -47,12 +47,14 @@ st.markdown("""
 
 @st.cache_data(ttl=600)
 def load_data():
-    conn = st.connection("snowflake")
+    conn = st.connection("neon", type="sql")
     
     query_matches = """
         SELECT 
             dp.PLAYER_NAME,
             dp.IS_ACTIVE,
+            dp.IS_ACTIVE_BTHCC,
+            dp.IS_ACTIVE_ADGO,
             ffp.Season AS SEASON,
             ffp.Match_Type AS MATCH_TYPE,
             ffp.Match_Result AS MATCH_RESULT,
@@ -67,7 +69,7 @@ def load_data():
             COALESCE(fb.Batting_Position, 'N/A') AS BATTING_POSITION,
             COALESCE(fbo.Wickets, 0) AS WICKETS,
             COALESCE(fbo.Runs, 0) AS RUNS_CONCEDED,
-            COALESCE(FLOOR(fbo.Overs) * 6 + ROUND((fbo.Overs - FLOOR(fbo.Overs)) * 10), 0) AS BALLS_BOWLED,
+            COALESCE(FLOOR(fbo.Overs) * 6 + ROUND(CAST((fbo.Overs - FLOOR(fbo.Overs)) * 10 AS numeric)), 0) AS BALLS_BOWLED,
             CASE WHEN fbo.Bowler IS NOT NULL AND COALESCE(fbo.Overs, 0) > 0 THEN 1 ELSE 0 END AS BOWLED_INNING,
             COALESCE(fbo."Dot Balls", 0) AS DOT_BALLS,
             COALESCE(fma.Catches, 0) AS CATCHES,
@@ -77,15 +79,15 @@ def load_data():
             CASE WHEN motm.Player_Name IS NOT NULL THEN 1 ELSE 0 END AS MOTM_AWARDS,
             ffp.Total_Pts AS FANTASY_PTS
         FROM 
-            DIM_PLAYER dp
+            raw_data.DIM_PLAYER dp
         JOIN 
-            FACT_FANTASY_POINTS ffp ON dp.PLAYER_NAME = ffp.Player_Name
+            raw_data.FACT_FANTASY_POINTS ffp ON dp.PLAYER_NAME = ffp.Player_Name
         LEFT JOIN 
-            FACT_BATTING fb ON dp.PLAYER_NAME = fb.BatsMan AND ffp.File_Name = fb.File_Name
+            raw_data.FACT_BATTING fb ON dp.PLAYER_NAME = fb.BatsMan AND ffp.File_Name = fb.File_Name
         LEFT JOIN 
-            FACT_BOWLING fbo ON dp.PLAYER_NAME = fbo.Bowler AND ffp.File_Name = fbo.File_Name
+            raw_data.FACT_BOWLING fbo ON dp.PLAYER_NAME = fbo.Bowler AND ffp.File_Name = fbo.File_Name
         LEFT JOIN 
-            DIM_MOTM motm ON dp.PLAYER_NAME = motm.Player_Name AND ffp.File_Name = motm.File_Name
+            raw_data.DIM_MOTM motm ON dp.PLAYER_NAME = motm.Player_Name AND ffp.File_Name = motm.File_Name
         LEFT JOIN 
             (
                 SELECT 
@@ -95,34 +97,38 @@ def load_data():
                     SUM(CASE WHEN LOWER(ff."How Out") LIKE '%ctw%' THEN 1 ELSE 0 END) AS Wk_Catches,
                     SUM(CASE WHEN LOWER(ff."How Out") LIKE '%st%' THEN 1 ELSE 0 END) AS Stumpings,
                     SUM(CASE WHEN LOWER(ff."How Out") LIKE '%ro%' OR LOWER(ff."How Out") LIKE '%run%' THEN 1 ELSE 0 END) AS Run_Outs
-                FROM FACT_FIELDING ff
-                JOIN DIM_PLAYER dp2 ON ff.Fielder = dp2.FIELDING_ALIAS
+                FROM raw_data.FACT_FIELDING ff
+                JOIN raw_data.DIM_PLAYER dp2 ON ff.Fielder = dp2.FIELDING_ALIAS
                 GROUP BY dp2.PLAYER_NAME, ff.File_Name
             ) fma ON dp.PLAYER_NAME = fma.PLAYER_NAME AND ffp.File_Name = fma.File_Name;
     """
     
-    query_view = "SELECT * FROM VW_ULTIMATE_PLAYER_DASHBOARD;"
-    query_awards = "SELECT * FROM DIM_LEAGUE_AWARDS;"
+    query_view = "SELECT * FROM raw_data.VW_ULTIMATE_PLAYER_DASHBOARD;"
+    query_awards = "SELECT * FROM raw_data.DIM_LEAGUE_AWARDS;"
     
     try:
         df_matches = conn.query(query_matches)
         df_view = conn.query(query_view)
         df_awards = conn.query(query_awards)
-        df_view = df_view.fillna(0)
+        
+        # Normalize PostgreSQL lowercase column names to uppercase
+        df_matches.columns = [c.upper() for c in df_matches.columns]
+        df_view.columns = [c.upper() for c in df_view.columns]
+        df_awards.columns = [c.upper() for c in df_awards.columns]
+        
+        # Safely fill NAs without triggering pandas downcasting FutureWarnings
+        df_view = df_view.fillna(0).infer_objects(copy=False)
         return df_matches, df_view, df_awards
     except Exception as e:
         st.error(f"SQL Compilation Error:\n\n{e}")
         return pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
 
-# Load dataframes
 df_matches, df_view, df_awards = load_data()
 
 if not df_matches.empty and not df_view.empty:
     
-    # Pre-declare globally to ensure structural scope validation safety
     filtered_matches = df_matches.copy()
     
-    # --- APP NAVIGATION ---
     if os.path.exists(logo_path):
         st.sidebar.image(logo_path, width='stretch')
     
@@ -136,7 +142,11 @@ if not df_matches.empty and not df_view.empty:
     if app_mode in ["🏔️ Hall of Fame", "🏏 Batting Stats", "🎯 Bowling Stats", "🦅 Fielding Stats", "📈 Winning Impact"]:
         st.sidebar.header("🏆 Global Filters")
         
-        # NEW ERA FILTER
+        league_filter = st.sidebar.selectbox(
+            "Franchise Context", 
+            ["Overall Warriorz (All / Incl. ADGO)", "ADGO Season 13 Only", "BTHCC Only"]
+        )
+        
         era_filter = st.sidebar.selectbox(
             "Franchise Era", 
             ["All Eras", "Cypress Warriors (2023-2024)", "Cypress Warriorz (2025 & Beyond)"]
@@ -151,8 +161,22 @@ if not df_matches.empty and not df_view.empty:
             raw_positions = sorted([p for p in df_matches['BATTING_POSITION'].unique() if p != 0 and p != 'N/A'])
             selected_position = st.sidebar.selectbox("Filter by Position", ["All Positions"] + raw_positions)
         
-        # Apply Era Filter Logic
-        filtered_matches['SEASON_YEAR'] = filtered_matches['SEASON'].apply(lambda x: int(re.search(r'\d{4}', str(x)).group()) if re.search(r'\d{4}', str(x)) else 0)
+        # Apply Franchise Context Filter (FIXED: BTHCC means NOT ADGO)
+        if league_filter == "ADGO Season 13 Only":
+            filtered_matches = filtered_matches[filtered_matches['SEASON'].astype(str).str.contains('ADGO', case=False)]
+        elif league_filter == "BTHCC Only":
+            filtered_matches = filtered_matches[~filtered_matches['SEASON'].astype(str).str.contains('ADGO', case=False)]
+        elif league_filter == "Overall Warriorz (All / Incl. ADGO)":
+            pass # Keep Everything
+
+        # Apply Era Filter Logic (FIXED: Preserve ADGO 2026 games during filtering)
+        def get_season_year(s):
+            match = re.search(r'\d{4}', str(s))
+            if match: return int(match.group())
+            if 'ADGO' in str(s).upper(): return 2026
+            return 0
+
+        filtered_matches['SEASON_YEAR'] = filtered_matches['SEASON'].apply(get_season_year)
         if era_filter == "Cypress Warriors (2023-2024)":
             filtered_matches = filtered_matches[(filtered_matches['SEASON_YEAR'] >= 2023) & (filtered_matches['SEASON_YEAR'] <= 2024)]
         elif era_filter == "Cypress Warriorz (2025 & Beyond)":
@@ -160,9 +184,19 @@ if not df_matches.empty and not df_view.empty:
 
         # Apply Base Filters
         if roster_status == "Active Only":
-            filtered_matches = filtered_matches[filtered_matches['IS_ACTIVE'] == True]
+            if league_filter == "ADGO Season 13 Only":
+                filtered_matches = filtered_matches[filtered_matches['IS_ACTIVE_ADGO'] == True]
+            elif league_filter == "BTHCC Only":
+                filtered_matches = filtered_matches[filtered_matches['IS_ACTIVE_BTHCC'] == True]
+            else:
+                filtered_matches = filtered_matches[filtered_matches['IS_ACTIVE'] == True]
         elif roster_status == "Inactive Only":
-            filtered_matches = filtered_matches[filtered_matches['IS_ACTIVE'] == False]
+            if league_filter == "ADGO Season 13 Only":
+                filtered_matches = filtered_matches[filtered_matches['IS_ACTIVE_ADGO'] == False]
+            elif league_filter == "BTHCC Only":
+                filtered_matches = filtered_matches[filtered_matches['IS_ACTIVE_BTHCC'] == False]
+            else:
+                filtered_matches = filtered_matches[filtered_matches['IS_ACTIVE'] == False]
             
         if team_match_type == "Career (All)":
             filtered_matches = filtered_matches[filtered_matches['MATCH_TYPE'].isin(['Regular Season', 'Playoff'])]
@@ -181,7 +215,6 @@ if not df_matches.empty and not df_view.empty:
     if app_mode != "🏆 Trophy Cabinet":
         st.sidebar.markdown("### 📊 Advanced Metrics")
 
-        # 1. HOF ONLY Aggregation Toggle
         if app_mode == "🏔️ Hall of Fame":
             agg_method = st.sidebar.radio(
                 "Calculation Method", 
@@ -195,7 +228,6 @@ if not df_matches.empty and not df_view.empty:
             math_func = 'sum'
             metric_label = "Total"
 
-        # 2. Max Games Dynamic Bounds
         max_historical_games = int(df_matches.groupby('PLAYER_NAME')['MATCH_LOG_ID'].nunique().max())
         if max_historical_games < 1: max_historical_games = 1
         
@@ -208,7 +240,6 @@ if not df_matches.empty and not df_view.empty:
             help="Filter out players with small sample sizes."
         )
 
-        # Apply Dynamic Slider bounds
         if app_mode in ["🏔️ Hall of Fame", "🏏 Batting Stats", "🎯 Bowling Stats", "🦅 Fielding Stats", "📈 Winning Impact"]:
             if not filtered_matches.empty:
                 games_played = filtered_matches.groupby('PLAYER_NAME')['MATCH_LOG_ID'].nunique()
@@ -249,25 +280,15 @@ if not df_matches.empty and not df_view.empty:
         team_leaderboard['ECONOMY_RATE'] = team_leaderboard.apply(lambda r: r['RUNS_CONCEDED']/(r['BALLS_BOWLED']/6) if r['BALLS_BOWLED'] > 0 else 0.0, axis=1)
         team_leaderboard['WK_TOTAL_DISMISSALS'] = team_leaderboard['WK_CATCHES'] + team_leaderboard['STUMPINGS']
 
-        # Manual math decoupling with True Batting Average updates
         if math_func == 'mean':
-            # FILTER STEP: Drop players with infinite averages (0 dismissals but runs scored)
             team_leaderboard = team_leaderboard[team_leaderboard['DISMISSALS'] > 0]
-            
             team_leaderboard['TOTAL_PTS'] = team_leaderboard['TOTAL_PTS'] / team_leaderboard['GAMES_PLAYED']
-            
-            # True traditional batting average logic (Runs divided by Times Out)
             team_leaderboard['RUNS'] = team_leaderboard['RUNS'] / team_leaderboard['DISMISSALS']
-            
-            # Bowling wickets per inning
             team_leaderboard['WICKETS'] = team_leaderboard.apply(lambda r: r['WICKETS']/r['BOWLED_INNINGS'] if r['BOWLED_INNINGS'] > 0 else 0.0, axis=1)
-            
-            # Fielding variables remain aggregated per game appearances
             team_leaderboard['CATCHES'] = team_leaderboard['CATCHES'] / team_leaderboard['GAMES_PLAYED']
             team_leaderboard['WK_TOTAL_DISMISSALS'] = team_leaderboard['WK_TOTAL_DISMISSALS'] / team_leaderboard['GAMES_PLAYED']
             team_leaderboard['MOTM_AWARDS'] = team_leaderboard['MOTM_AWARDS'] / team_leaderboard['GAMES_PLAYED']
             team_leaderboard['RUN_OUTS'] = team_leaderboard['RUN_OUTS'] / team_leaderboard['GAMES_PLAYED']
-            
             team_leaderboard = team_leaderboard.round(1)
 
         if math_func == 'mean':
@@ -346,7 +367,7 @@ if not df_matches.empty and not df_view.empty:
         st.divider()
 
         if not df_awards.empty:
-            seasons = sorted(df_awards['SEASON'].unique(), reverse=True)
+            seasons = sorted(df_awards['SEASON'].dropna().unique(), reverse=True)
             for season in seasons:
                 st.markdown(f"<h3 style='color: #d4af37; border-bottom: 1px solid #333; padding-bottom: 10px;'>{season} Season</h3>", unsafe_allow_html=True)
                 st.write("")
@@ -355,8 +376,8 @@ if not df_matches.empty and not df_view.empty:
                 cols = st.columns(3)
                 
                 for i, row in season_awards.reset_index().iterrows():
-                    award_name = str(row['AWARD_TYPE']).lower()
-                    occasion_name = str(row['OCCASION']).lower()
+                    award_name = str(row.get('AWARD_TYPE', '')).lower()
+                    occasion_name = str(row.get('OCCASION', '')).lower()
                     
                     if any(kw in award_name for kw in ["mvp", "league", "tournament", "best"]):
                         card_style = "trophy-league"
@@ -379,11 +400,11 @@ if not df_matches.empty and not df_view.empty:
                         <div class="{card_style}">
                             <div class="badge-tag {badge_style}">{badge_text}</div>
                             <div class="trophy-icon">{icon}</div>
-                            <div class="trophy-title">{row['AWARD_TYPE']}</div>
-                            <div class="trophy-winner">{row['PLAYER_NAME']}</div>
+                            <div class="trophy-title">{row.get('AWARD_TYPE', 'Award')}</div>
+                            <div class="trophy-winner">{row.get('PLAYER_NAME', 'Winner')}</div>
                             <div class="trophy-divider"></div>
-                            <div class="trophy-stats"><b>Performance:</b> {row['STATS']}</div>
-                            <div class="trophy-occasion">{row['OCCASION']} vs {row['OPPONENT']}</div>
+                            <div class="trophy-stats"><b>Performance:</b> {row.get('STATS', 'N/A')}</div>
+                            <div class="trophy-occasion">{row.get('OCCASION', 'League Event')} vs {row.get('OPPONENT', 'Opponent')}</div>
                         </div>
                         """, unsafe_allow_html=True)
                 st.write("")
@@ -548,7 +569,7 @@ if not df_matches.empty and not df_view.empty:
         st.divider()
 
         if 'MATCH_RESULT' not in filtered_matches.columns:
-            st.error("MATCH_RESULT column not found! Please add 'ffp.Match_Result AS MATCH_RESULT' to your load_data() SQL query.")
+            st.error("MATCH_RESULT column not found!")
         else:
             win_df = filtered_matches.groupby(['PLAYER_NAME', 'MATCH_RESULT'])['MATCH_LOG_ID'].nunique().unstack(fill_value=0).reset_index()
             win_df.columns = [str(c).upper() for c in win_df.columns]
@@ -587,11 +608,8 @@ if not df_matches.empty and not df_view.empty:
         player_list = sorted(df_matches['PLAYER_NAME'].dropna().unique().tolist())
         selected_player = st.sidebar.selectbox("Select Player", player_list)
         
-        # NEW ERA FILTER FOR INDIVIDUAL MODE
-        era_filter_ind = st.sidebar.selectbox(
-            "Franchise Era", 
-            ["All Eras", "Cypress Warriors (2023-2024)", "Cypress Warriorz (2025 & Beyond)"]
-        )
+        league_filter_ind = st.sidebar.selectbox("Franchise Context", ["Overall Warriorz (All / Incl. ADGO)", "ADGO Season 13 Only", "BTHCC Only"])
+        era_filter_ind = st.sidebar.selectbox("Franchise Era", ["All Eras", "Cypress Warriors (2023-2024)", "Cypress Warriorz (2025 & Beyond)"])
         
         match_types = ["Career (All)", "Regular Season", "Playoff", "Practice"]
         selected_match_type = st.sidebar.selectbox("Match Format", match_types)
@@ -612,17 +630,29 @@ if not df_matches.empty and not df_view.empty:
             options=available_metrics, default=["Matches Played", "Runs", "Highest Score", "Wickets", "Fantasy Points"], max_selections=5
         )
         
-        # Explicit .copy() to prevent SettingWithCopyWarning
         filtered_df = df_matches[df_matches['PLAYER_NAME'] == selected_player].copy()
         
-        # Apply Era Filter Logic
-        filtered_df['SEASON_YEAR'] = filtered_df['SEASON'].apply(lambda x: int(re.search(r'\d{4}', str(x)).group()) if re.search(r'\d{4}', str(x)) else 0)
+        # Apply Profile Context Filters (FIXED: BTHCC means NOT ADGO)
+        if league_filter_ind == "ADGO Season 13 Only":
+            filtered_df = filtered_df[filtered_df['SEASON'].astype(str).str.contains('ADGO', case=False)]
+        elif league_filter_ind == "BTHCC Only":
+            filtered_df = filtered_df[~filtered_df['SEASON'].astype(str).str.contains('ADGO', case=False)]
+        elif league_filter_ind == "Overall Warriorz (All / Incl. ADGO)":
+            pass
+
+        # Apply Profile Era Filter Logic (FIXED: Preserve ADGO 2026 games)
+        def get_season_year_ind(s):
+            match = re.search(r'\d{4}', str(s))
+            if match: return int(match.group())
+            if 'ADGO' in str(s).upper(): return 2026
+            return 0
+
+        filtered_df['SEASON_YEAR'] = filtered_df['SEASON'].apply(get_season_year_ind)
         if era_filter_ind == "Cypress Warriors (2023-2024)":
             filtered_df = filtered_df[(filtered_df['SEASON_YEAR'] >= 2023) & (filtered_df['SEASON_YEAR'] <= 2024)]
         elif era_filter_ind == "Cypress Warriorz (2025 & Beyond)":
             filtered_df = filtered_df[filtered_df['SEASON_YEAR'] >= 2025]
 
-        # Base Filters
         if selected_match_type == "Career (All)":
             filtered_df = filtered_df[filtered_df['MATCH_TYPE'].isin(['Regular Season', 'Playoff'])]
         else:
@@ -722,6 +752,10 @@ if not df_matches.empty and not df_view.empty:
             
             view_player_df = view_player_df[
                 view_player_df.index.str.startswith(target_prefix) | 
-                view_player_df.index.isin(['IS_ACTIVE', 'ACTIVE_IN_PRACTICE_LEAGUE', 'CAREER_LEAGUE_AWARDS'])
+                view_player_df.index.isin(['IS_ACTIVE', 'IS_ACTIVE_BTHCC', 'IS_ACTIVE_ADGO', 'ACTIVE_IN_PRACTICE_LEAGUE', 'CAREER_LEAGUE_AWARDS'])
             ]
+            
+            # --- PYARROW FIX: Convert column to string to prevent mixed-type crashes ---
+            view_player_df["Aggregates"] = view_player_df["Aggregates"].astype(str)
+            
             st.dataframe(view_player_df, width='stretch')

@@ -6,4 +6,6 @@ joblib
 torch
 scipy
 scikit-learn
-snowflake-connector-python
+psycopg2-binary
+SQLAlchemy
+openpyxl

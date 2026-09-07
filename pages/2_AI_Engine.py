@@ -7,25 +7,19 @@ import os
 import joblib
 import platform
 
-# --- DEEP LEARNING & OPTIMIZATION IMPORTS ---
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
 from scipy.optimize import milp, LinearConstraint, Bounds
 
-# --- WINDOWS ENVIRONMENT PATCH ---
 platform.libc_ver = lambda *args, **kwargs: ("", "")
 
-# Removed legacy train_ai_predictor and generate_weekend_lineup
 from ml_pipeline import (
     engineer_all_features, 
     calculate_pairwise_synergy
 )
 
-# ==========================================
-# 1. VISUAL CANVAS STYLING DIRECTIVES
-# ==========================================
 st.set_page_config(
     page_title="Warriorz AI Engine", 
     page_icon="🏏", 
@@ -50,10 +44,6 @@ logo_path = "assets/CWCCNEWLOGO.jpeg"
 if os.path.exists(logo_path):
     st.sidebar.image(logo_path, use_container_width=True)
 
-
-# ==========================================
-# 2. DEEP LEARNING ARCHITECTURE (PYTORCH)
-# ==========================================
 class WarriorzNet(nn.Module):
     def __init__(self, input_features):
         super(WarriorzNet, self).__init__()
@@ -62,7 +52,6 @@ class WarriorzNet(nn.Module):
         self.fc2 = nn.Linear(128, 64)
         self.dropout = nn.Dropout(0.2)
         self.fc3 = nn.Linear(64, 32)
-        # Outputs: [Runs, Wickets, Points]
         self.output = nn.Linear(32, 3)
 
     def forward(self, x):
@@ -72,23 +61,20 @@ class WarriorzNet(nn.Module):
         x = self.relu(self.fc3(x))
         return self.output(x)
 
-
-# ==========================================
-# 3. FILE INTERACTION & PIPELINE METHODS
-# ==========================================
 @st.cache_data(ttl="10m")
 def fetch_base_roster():
     try:
-        conn = st.connection("snowflake")
+        conn = st.connection("neon", type="sql")
         roster_df = conn.query("""
             SELECT PLAYER_NAME 
-            FROM CYPRESS_WARRIORZ_DW.RAW_DATA.DIM_PLAYER 
+            FROM raw_data.DIM_PLAYER 
             WHERE IS_ACTIVE = TRUE
             ORDER BY PLAYER_NAME ASC;
         """)
+        roster_df.columns = [c.upper() for c in roster_df.columns]
         return roster_df['PLAYER_NAME'].tolist()
     except Exception as e:
-        st.sidebar.error(f"🔌 Snowflake Connection Failed: {e}")
+        st.sidebar.error(f"🔌 Neon Connection Failed: {e}")
         return []
 
 @st.cache_resource
@@ -99,7 +85,6 @@ def load_trained_pipeline():
             synergy = joblib.load('models/synergy_matrix.joblib')
             historical = joblib.load('models/historical_features.joblib')
             
-            # Reconstruct PyTorch Model
             model = WarriorzNet(input_features=len(features))
             model.load_state_dict(torch.load('models/warriorz_net.pth'))
             model.eval()
@@ -112,31 +97,18 @@ def load_trained_pipeline():
 all_players = fetch_base_roster()
 pytorch_model, training_features, df_synergy, df_engineered, needs_training = load_trained_pipeline()
 
-
-# ==========================================
-# 4. MATHEMATICAL OPTIMIZER (SCIPY MILP)
-# ==========================================
 def scipy_optimize_lineup(players_df, active_roster):
-    """
-    Applies Mixed-Integer Linear Programming to find the 
-    mathematically optimal 11-man squad meeting all constraints.
-    """
-    # Filter for active players only
     df = players_df[players_df['PLAYER_NAME'].isin(active_roster)].copy().reset_index(drop=True)
     
     if len(df) < 11:
         return pd.DataFrame()
 
     N = len(df)
-    
-    # Objective: Maximize Points (SciPy minimizes, so make coefficients negative)
     c = -df['AI_Projected_Points'].values
     
-    # Constraint 1: Exactly 11 players
     A_eq = np.ones((1, N))
     b_eq = np.array([11])
     
-    # Constraint 2: Total Wickets between 8 and 10
     A_wicket = df['AI_Projected_Wickets'].values.reshape(1, N)
     lb_wicket = np.array([8])
     ub_wicket = np.array([10])
@@ -146,25 +118,22 @@ def scipy_optimize_lineup(players_df, active_roster):
         LinearConstraint(A_wicket, lb_wicket, ub_wicket)
     ]
     
-    # Bounds: The Leadership Lock
     lb = np.zeros(N)
     ub = np.ones(N)
     
     for idx, row in df.iterrows():
         if row['PLAYER_NAME'] in ['Uday Chaudhary', 'Garv Chaudhary']:
-            lb[idx] = 1  # Force selection
+            lb[idx] = 1
             
     bounds = Bounds(lb, ub)
-    integrality = np.ones(N) # Binary variables
+    integrality = np.ones(N)
     
-    # Run Solver
     res = milp(c=c, constraints=constraints, bounds=bounds, integrality=integrality)
     
     if res.success:
         selected_indices = np.round(res.x).astype(bool)
         optimal_team = df[selected_indices].copy()
         
-        # Assign Batting Order by Projected Runs
         optimal_team = optimal_team.sort_values(by='AI_Projected_Runs', ascending=False).reset_index(drop=True)
         optimal_team['Optimal_Batting_Order'] = optimal_team.index + 1
         
@@ -173,10 +142,6 @@ def scipy_optimize_lineup(players_df, active_roster):
         st.error("🚨 Math Engine Failed: Could not satisfy the 8-10 wicket constraint with the selected squad.")
         return pd.DataFrame()
 
-
-# ==========================================
-# 5. INTERACTIVE CONTROL SIDEBAR
-# ==========================================
 with st.sidebar:
     st.markdown("<h1>WARRIORZ ANALYTICS</h1>", unsafe_allow_html=True)
     st.caption("Deep Learning Multi-Target Projections Engine")
@@ -196,8 +161,7 @@ with st.sidebar:
         if st.button("Synchronize & Retrain Pipeline"):
             with st.spinner("Executing ETL & Training Neural Network..."):
                 try:
-                    conn = st.connection("snowflake")
-                    # Extraction query remains unchanged
+                    conn = st.connection("neon", type="sql")
                     ml_data_query = """
                         SELECT 
                             dp.PLAYER_NAME, ffp.File_Name AS MATCH_LOG_ID, ffp.Season AS SEASON,
@@ -207,31 +171,30 @@ with st.sidebar:
                             COALESCE(fbo.Overs, 0) AS OVERS_BOWLED,
                             COALESCE(fma.Catches, 0) AS CATCHES, COALESCE(fma.Stumpings, 0) AS STUMPINGS,
                             COALESCE(fma.Run_Outs, 0) AS RUN_OUTS, ffp.Total_Pts AS FANTASY_PTS
-                        FROM CYPRESS_WARRIORZ_DW.RAW_DATA.DIM_PLAYER dp
-                        JOIN CYPRESS_WARRIORZ_DW.RAW_DATA.FACT_FANTASY_POINTS ffp ON dp.PLAYER_NAME = ffp.Player_Name
-                        LEFT JOIN CYPRESS_WARRIORZ_DW.RAW_DATA.FACT_BATTING fb ON dp.PLAYER_NAME = fb.BatsMan AND ffp.File_Name = fb.File_Name
-                        LEFT JOIN CYPRESS_WARRIORZ_DW.RAW_DATA.FACT_BOWLING fbo ON dp.PLAYER_NAME = fbo.Bowler AND ffp.File_Name = fbo.File_Name
+                        FROM raw_data.DIM_PLAYER dp
+                        JOIN raw_data.FACT_FANTASY_POINTS ffp ON dp.PLAYER_NAME = ffp.Player_Name
+                        LEFT JOIN raw_data.FACT_BATTING fb ON dp.PLAYER_NAME = fb.BatsMan AND ffp.File_Name = fb.File_Name
+                        LEFT JOIN raw_data.FACT_BOWLING fbo ON dp.PLAYER_NAME = fbo.Bowler AND ffp.File_Name = fbo.File_Name
                         LEFT JOIN (
                             SELECT 
                                 dp2.PLAYER_NAME, ff.File_Name,
                                 SUM(CASE WHEN (LOWER(ff."How Out") LIKE '%ct%' OR LOWER(ff."How Out") LIKE '%c%') AND LOWER(ff."How Out") NOT LIKE '%ctw%' THEN 1 ELSE 0 END) AS Catches,
                                 SUM(CASE WHEN LOWER(ff."How Out") LIKE '%st%' THEN 1 ELSE 0 END) AS Stumpings,
                                 SUM(CASE WHEN LOWER(ff."How Out") LIKE '%ro%' OR LOWER(ff."How Out") LIKE '%run%' THEN 1 ELSE 0 END) AS Run_Outs
-                            FROM CYPRESS_WARRIORZ_DW.RAW_DATA.FACT_FIELDING ff
-                            JOIN CYPRESS_WARRIORZ_DW.RAW_DATA.DIM_PLAYER dp2 ON ff.Fielder = dp2.FIELDING_ALIAS
+                            FROM raw_data.FACT_FIELDING ff
+                            JOIN raw_data.DIM_PLAYER dp2 ON ff.Fielder = dp2.FIELDING_ALIAS
                             GROUP BY dp2.PLAYER_NAME, ff.File_Name
                         ) fma ON dp.PLAYER_NAME = fma.PLAYER_NAME AND ffp.File_Name = fma.File_Name;
                     """
-                    raw_logs = conn.query(ml_data_query, ttl=0)
+                    raw_logs = conn.query(ml_data_query)
+                    raw_logs.columns = [c.upper() for c in raw_logs.columns]
                     
                     df_eng = engineer_all_features(raw_logs)
                     df_syn = calculate_pairwise_synergy(df_eng)
                     
-                    # Target & Feature Isolation
                     targets = ['RUNS_SCORED', 'WICKETS_TAKEN', 'FANTASY_PTS']
                     train_feats = [col for col in df_eng.select_dtypes(include=[np.number]).columns if col not in targets]
                     
-                    # PyTorch Training Loop
                     X_tensor = torch.FloatTensor(df_eng[train_feats].fillna(0).values)
                     y_tensor = torch.FloatTensor(df_eng[targets].fillna(0).values)
                     
@@ -250,7 +213,6 @@ with st.sidebar:
                             loss.backward()
                             optimizer.step()
                     
-                    # Save Artifacts
                     os.makedirs('models', exist_ok=True)
                     torch.save(model.state_dict(), 'models/warriorz_net.pth')
                     joblib.dump(train_feats, 'models/training_features.joblib')
@@ -263,27 +225,22 @@ with st.sidebar:
                 except Exception as e:
                     st.error(f"Warehouse Optimization Failed: {e}")
 
-# ==========================================
-# 6. MAIN ANALYTICAL CANVAS
-# ==========================================
 if not run_optimization:
     st.markdown("""
         <div class='dashboard-card'>
             <span class='badge-lock'>WARRIORZ DEEP LEARNING ENGINE ONLINE</span>
             <h1 style='margin-top:15px; margin-bottom:5px;'>Matchday Strategy Console</h1>
-            <p style='color:#a1a1aa; font-size:1.1rem;'>Strategic selection utilizing PyTorch neural projections and SciPy mathematical constraints. Involvements from fielding are restricted purely to tight tie-breaker scenarios.</p>
+            <p style='color:#a1a1aa; font-size:1.1rem;'>Strategic selection utilizing PyTorch neural projections and SciPy mathematical constraints.</p>
         </div>
     """, unsafe_allow_html=True)
     if needs_training:
         st.info("💡 Model repository empty. Run the synchronization tool in the management tab to train the PyTorch Network.")
 else:
-    # --- NEW SAFETY CHECK ADDED HERE ---
     if needs_training or df_engineered is None:
         st.error("🚨 Missing AI Models: The Deep Learning engine hasn't been trained yet. Please open **⚙️ Core Database Tools** in the sidebar and click **'Synchronize & Retrain Pipeline'** first.")
     elif len(active_sign_ups) < 11:
         st.error("⚠️ Roster Depth Error: 11 active entries required to generate starting configurations.")
     else:
-        # Run PyTorch Inference for the Matchday Roster
         inference_df = df_engineered.drop_duplicates(subset=['PLAYER_NAME'], keep='last').copy()
         X_infer = torch.FloatTensor(inference_df[training_features].fillna(0).values)
         
@@ -294,7 +251,6 @@ else:
         inference_df['AI_Projected_Wickets'] = np.maximum(0, preds[:, 1])
         inference_df['AI_Projected_Points'] = np.maximum(0, preds[:, 2])
 
-        # Pass projections to SciPy
         optimal_lineup_df = scipy_optimize_lineup(inference_df, active_sign_ups)
         
         if not optimal_lineup_df.empty:
@@ -304,12 +260,10 @@ else:
             
             st.markdown("<h2>⚡ Optimal Strategy Specifications</h2>", unsafe_allow_html=True)
             
-            # Override callouts
             if "Uday Chaudhary" in active_sign_ups or "Garv Chaudhary" in active_sign_ups:
                 locks = [f"<b>{p}</b>" for p in ["Uday Chaudhary", "Garv Chaudhary"] if p in active_sign_ups]
                 st.markdown(f"<div class='badge-lock' style='margin-bottom:20px;'>👑 Leadership Lock Engaged: {', '.join(locks)} successfully secured in the primary XI sheet.</div>", unsafe_allow_html=True)
                 
-            # Summary KPI Displays
             kpi1, kpi2, kpi3 = st.columns(3)
             with kpi1: st.metric("Team Projected Points", f"{total_pts}")
             with kpi2: st.metric("Expected Total Runs", f"{int(total_runs)}")
@@ -317,7 +271,6 @@ else:
             
             st.divider()
             
-            # Horizontal Split Panel Layout
             col_grid, col_charts = st.columns([1.2, 1])
             
             with col_grid:
@@ -342,7 +295,6 @@ else:
                     }
                 )
                 
-                # --- GRAPHIC 1: Player Role Matrix ---
                 st.markdown("### 🎯 Player Role Matrix")
                 st.caption("Identify All-Rounders vs Specialists")
                 fig_scatter = px.scatter(
@@ -375,7 +327,6 @@ else:
                 )
                 st.plotly_chart(fig_scatter, use_container_width=True)
 
-                # --- GRAPHIC 2: Fantasy Point Contribution ---
                 st.markdown("### 💎 Fantasy Points Share")
                 fig_donut = px.pie(
                     optimal_lineup_df,
@@ -405,7 +356,6 @@ else:
             with col_charts:
                 st.markdown("### 📊 Projected Production Mapping")
                 
-                # Interactive Production Spread Graphic
                 fig_prod = px.bar(
                     optimal_lineup_df,
                     x="PLAYER_NAME",
@@ -423,7 +373,6 @@ else:
                 )
                 st.plotly_chart(fig_prod, use_container_width=True)
                 
-                # Run Distribution mapped directly to Batting Order
                 st.markdown("### 🏏 Projected Run Distribution by Slot")
                 fig_slots = px.bar(
                     optimal_lineup_df,
@@ -446,7 +395,6 @@ else:
                 )
                 st.plotly_chart(fig_slots, use_container_width=True)
                 
-                # Synergy Component Feed
                 if not df_synergy.empty:
                     selected_names = optimal_lineup_df['PLAYER_NAME'].tolist()
                     active_synergy = df_synergy[

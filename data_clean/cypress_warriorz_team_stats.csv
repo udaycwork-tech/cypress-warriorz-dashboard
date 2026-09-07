@@ -1,0 +1,102 @@
+Season,Match_Type,Playoff_Round,Opponent,Match_Result,Cypress_Runs,Cypress_Wickets,Cypress_Overs,Opponent_Runs,Opponent_Wickets,Opponent_Overs,File_Name
+ADGO Season 13,Regular Season,N/A,Peacock C4,Win,206,5,20.0,154,8,20.0,ADGOS13G1.csv
+ADGO Season 13,Regular Season,N/A,Houston Benchwarmers,Win,157,0,15.0,156,6,20.0,ADGOS13G2.csv
+ADGO Season 13,Regular Season,N/A,Katy Ravens,Win,174,5,16.1,172,8,18.0,ADGOS13G3.csv
+Fall 2023,Playoff,Final,Rowdy Boys,Loss,114,10,19.0,115,3,15.4,Fall2023Finals.csv
+Fall 2023,Playoff,Semi Final,Bth,Win,116,6,16.3,115,7,20.0,Fall2023SF.csv
+Fall 2023,Regular Season,N/A,HEC,Win,204,3,20.0,107,10,16.5,Fall2023G1.csv
+Fall 2023,Regular Season,N/A,Bth,Win,138,5,15.5,137,7,20.0,Fall2023G2.csv
+Fall 2023,Regular Season,N/A,Katy Ravens,Win,208,8,20.0,108,10,15.4,Fall2023G3.csv
+Fall 2023,Regular Season,N/A,Wolfpack Icons,Win,114,6,16.4,113,10,18.5,Fall2023G4.csv
+Fall 2023,Regular Season,N/A,Stallions,Win,120,4,12.2,118,7,20.0,Fall2023G5.csv
+Fall 2023,Regular Season,N/A,Rowdy Boys,No Result,0,0,0.0,0,0,0.0,Fall2023G6.csv
+Fall 2023,Regular Season,N/A,Champion CC,Win,121,9,18.0,100,10,18.3,Fall2023G7.csv
+Fall 2024,Playoff,Final,Wolfpack Icons,Loss,119,9,20.0,131,9,20.0,Fall2024Finals.csv
+Fall 2024,Playoff,Quarter Final,Bcc Legends,Win,125,7,14.3,121,9,20.0,Fall2024QF.csv
+Fall 2024,Playoff,Semi Final,Houston Benchwarmers,Win,106,5,17.1,102,9,20.0,Fall2024SF.csv
+Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,72,1,7.1,68,10,14.2,Fall2024G1.csv
+Fall 2024,Regular Season,N/A,Champion CC,Win,105,6,13.4,104,10,18.5,Fall2024G2.csv
+Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,112,10,18.1,107,10,19.3,Fall2024G3.csv
+Fall 2024,Regular Season,N/A,Bcc Legends,Win,133,2,16.5,129,7,18.0,Fall2024G4.csv
+Fall 2024,Regular Season,N/A,Bth,No Result,0,0,0.0,0,0,0.0,Fall2024G5.csv
+Fall 2024,Regular Season,N/A,Blue Star,Win,181,4,20.0,139,10,19.5,Fall2024G6.csv
+Fall 2024,Regular Season,N/A,Rowdy Boys,No Result,0,0,0.0,22,2,4.0,Fall2024G7.csv
+Fall 2025,Playoff,Final,Hashtag Indians,Win,160,9,20.0,130,10,20.0,Fall2025Finals.csv
+Fall 2025,Playoff,Quarter Final,QHRS,Win,72,3,10.0,71,10,18.4,Fall2025QF.csv
+Fall 2025,Playoff,Semi Final,Falcons XI,Win,105,6,20.0,82,10,16.1,Fall2025SF.csv
+Fall 2025,Regular Season,N/A,Champion CC,Win,128,7,18.0,117,8,18.0,Fall2025G1.csv
+Fall 2025,Regular Season,N/A,BTAMU,Win,80,2,12.5,79,10,18.0,Fall2025G2.csv
+Fall 2025,Regular Season,N/A,OG'S,Win,122,8,16.5,119,8,20.0,Fall2025G3.csv
+Fall 2025,Regular Season,N/A,Bth,Win,170,2,18.0,166,10,19.2,Fall2025G4.csv
+Fall 2025,Regular Season,N/A,Stallions,Loss,41,10,11.1,102,8,18.0,Fall2025G5.csv
+Fall 2025,Regular Season,N/A,Rowdy Boys,Win,139,4,18.0,118,9,18.0,Fall2025G6.csv
+Fall 2025,Regular Season,N/A,Houston Benchwarmers,Loss,0,0,0.0,0,0,0.0,Fall2025G7.csv
+Practice League,Practice,N/A,Bth,Loss,116,10,19.3,128,9,19.4,PracticeGame1.csv
+Practice League,Practice,N/A,Bth,Loss,139,8,20.0,156,10,17.5,PracticeGame2.csv
+Practice League,Practice,N/A,Bth,Win,138,3,14.1,136,10,19.1,PracticeGame3.csv
+Practice League,Practice,N/A,Bth,Win,125,3,13.5,121,9,20.0,PracticeGame4.csv
+Practice League,Practice,N/A,Bcc Legends,Win,90,5,10.4,86,10,14.4,PracticeGame5.csv
+Practice League,Practice,N/A,Bth,Win,124,2,12.1,123,7,20.0,PracticeGame6.csv
+Unknown,Regular Season,N/A,Unknown,Loss,0,0,0.0,0,0,0.0,fullroster.csv
+Practice League,Practice,N/A,Unknown,Loss,0,0,0.0,0,0,0.0,practiceleagueroster.csv
+Spring 2023,Regular Season,N/A,Katy Ravens,Win,100,1,12.1,99,10,19.2,Spring2023G1.csv
+Spring 2023,Regular Season,N/A,Downtown Dynamitz,Win,84,2,12.5,83,10,19.0,Spring2023G2.csv
+Spring 2023,Regular Season,N/A,Champion CC,Loss,68,10,12.4,138,10,19.3,Spring2023G3.csv
+Spring 2023,Regular Season,N/A,Stallions,No Result,0,0,0.0,0,0,0.0,Spring2023G4.csv
+Spring 2023,Regular Season,N/A,Bth,Loss,92,8,20.1,94,2,12.4,Spring2023G5.csv
+Spring 2023,Regular Season,N/A,Bcc Legends,Win,104,6,18.0,103,10,19.5,Spring2023G6.csv
+Spring 2023,Regular Season,N/A,BTAMU,Loss,131,9,18.0,132,3,14.2,Spring2023G7.csv
+Spring 2024,Playoff,Quarter Final,Houston Scorpions,Win,165,7,19.1,164,8,20.0,Spring2024QF.csv
+Spring 2024,Playoff,Semi Final,Wolfpack Icons,Loss,101,10,18.4,102,7,19.0,Spring2024SF.csv
+Spring 2024,Regular Season,N/A,Downtown Dynamitz,Win,89,5,15.1,88,10,18.2,Spring2024G1.csv
+Spring 2024,Regular Season,N/A,BTAMU,Win,161,7,20.0,75,10,16.4,Spring2024G2.csv
+Spring 2024,Regular Season,N/A,Just In Case,Win,192,9,20.0,88,7,15.0,Spring2024G3.csv
+Spring 2024,Regular Season,N/A,Bcc Legends,Tie,159,9,20.0,159,8,20.0,Spring2024G4.csv
+Spring 2024,Regular Season,N/A,Rowdy Boys,Win,146,5,18.0,144,10,18.3,Spring2024G5.csv
+Spring 2024,Regular Season,N/A,Houston Benchwarmers,Loss,47,8,11.3,134,7,20.0,Spring2024G6.csv
+Spring 2024,Regular Season,N/A,Falcons XI,Loss,56,9,11.0,57,8,11.3,Spring2024G7.csv
+Spring 2025,Playoff,Quarter Final,Falcons XI,Win,197,5,20.0,75,10,14.4,Spring2025QF.csv
+Spring 2025,Playoff,Semi Final,Hashtag Indians,Loss,137,8,20.0,139,8,20.0,Spring2025SF.csv
+Spring 2025,Regular Season,N/A,Javelinas-genx,Win,132,9,20.0,89,10,20.0,Spring2025G1.csv
+Spring 2025,Regular Season,N/A,Houston Scorpions,Win,154,9,20.0,141,8,20.0,Spring2025G2.csv
+Spring 2025,Regular Season,N/A,Rowdy Boys,Loss,94,10,17.3,110,8,18.0,Spring2025G3.csv
+Spring 2025,Regular Season,N/A,QHRS,Win,146,3,17.5,140,6,20.0,Spring2025G4.csv
+Spring 2025,Regular Season,N/A,Downtown Dynamitz,Win,160,7,20.0,130,10,19.1,Spring2025G5.csv
+Spring 2025,Regular Season,N/A,Houston Benchwarmers,Win,168,7,20.0,128,9,20.0,Spring2025G6.csv
+Spring 2025,Regular Season,N/A,The Legends,Win,144,8,20.0,93,10,18.0,Spring2025G7.csv
+Spring 2026,Playoff,Final,Houston Scorpions,Win,99,5,14.3,98,10,18.5,Spring2026Finals.csv
+Spring 2026,Playoff,Quarter Final,Stallions,Win,134,4,13.2,133,10,19.5,Spring2026QF.csv
+Spring 2026,Playoff,Semi Final,Falcons XI,Win,92,3,8.2,89,10,17.2,Spring2026SF.csv
+Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,163,8,20.0,162,10,20.0,Spring2026G1.csv
+Spring 2026,Regular Season,N/A,Javelinas-genx,Win,190,5,20.0,182,9,20.0,Spring2026G2.csv
+Spring 2026,Regular Season,N/A,OG'S,Win,210,9,20.0,168,5,18.0,Spring2026G3.csv
+Spring 2026,Regular Season,N/A,Falcons XI,No Result,0,0,0.0,0,0,0.0,Spring2026G4.csv
+Spring 2026,Regular Season,N/A,The Legends,No Result,0,0,0.0,90,2,8.0,Spring2026G5.csv
+Spring 2026,Regular Season,N/A,QHRS,Win,149,8,20.0,74,10,16.0,Spring2026G6.csv
+Spring 2026,Regular Season,N/A,Daddy Sharks (powered by TekGlobal),Win (Forfeit),0,0,0.0,0,0,0.0,Spring2026G7.csv
+Summer 2024,Playoff,Final,Houston Scorpions,Loss,99,10,19.0,147,9,20.0,Summer2024Finals.csv
+Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,115,6,18.5,114,10,18.5,Summer2024QF.csv
+Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,156,8,20.0,137,10,17.2,Summer2024SF.csv
+Summer 2024,Regular Season,N/A,Rowdy Boys,Loss,119,10,16.5,176,6,18.0,Summer2024G1.csv
+Summer 2024,Regular Season,N/A,Bth,Win,80,4,11.4,74,10,19.5,Summer2024G2.csv
+Summer 2024,Regular Season,N/A,Champion CC,No Result,0,0,0.0,0,0,0.0,Summer2024G3.csv
+Summer 2024,Regular Season,N/A,Downtown Dynamitz,Win,163,4,20.0,87,10,15.3,Summer2024G4.csv
+Summer 2024,Regular Season,N/A,Just In Case,Win,171,6,20.0,146,10,20.0,Summer2024G5.csv
+Summer 2024,Regular Season,N/A,Houston Benchwarmers,Loss,140,9,19.4,145,7,20.0,Summer2024G6.csv
+Summer 2024,Regular Season,N/A,Wolfpack Icons,Win (Forfeit),0,0,0.0,0,0,0.0,Summer2024G7.csv
+Summer 2025,Playoff,Final,Rowdy Boys,Win,175,5,20.0,138,10,16.3,Summer2025Finals.csv
+Summer 2025,Playoff,Quarter Final,Bth,Win,119,1,9.3,115,7,20.0,Summer2025QF.csv
+Summer 2025,Playoff,Semi Final,Champion CC,Win,126,8,19.1,125,10,20.0,Summer2025SF.csv
+Summer 2025,Regular Season,N/A,Bcc Legends,Win,148,4,20.0,79,10,16.5,Summer2025G1.csv
+Summer 2025,Regular Season,N/A,Houston Titans,Win,192,6,20.0,96,10,16.5,Summer2025G2.csv
+Summer 2025,Regular Season,N/A,Houston Scorpions,Win,119,6,15.3,114,10,17.0,Summer2025G3.csv
+Summer 2025,Regular Season,N/A,Stallions,Win,187,8,20.0,134,10,16.4,Summer2025G4.csv
+Summer 2025,Regular Season,N/A,BTAMU,Win,113,10,18.1,109,8,20.0,Summer2025G5.csv
+Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,238,6,20.0,118,10,20.1,Summer2025G6.csv
+Summer 2025,Regular Season,N/A,Wolfpack Icons,Loss,148,7,20.0,150,6,16.1,Summer2025G7.csv
+Summer 2026,Regular Season,N/A,Downtown Dynamitz,Loss,90,10,15.2,93,5,13.1,Summer2026G1.csv
+Summer 2026,Regular Season,N/A,Javelinas-genx,Win,105,4,9.0,101,10,18.0,Summer2026G2.csv
+Summer 2026,Regular Season,N/A,Houston Titans,Win,155,9,19.1,88,10,15.1,Summer2026G3.csv
+Summer 2026,Regular Season,N/A,Rowdy Boys,Win (Forfeit),0,0,0.0,0,0,0.0,Summer2026G4.csv
+Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,208,7,20.0,183,10,20.0,Summer2026G5.csv
+Summer 2026,Regular Season,N/A,Stallions,Win,221,4,20.0,147,10,17.3,Summer2026G6.csv

@@ -1,0 +1,70 @@
+Season,Match_Type,Playoff_Round,Opponent,Match_Result,Player_Name,File_Name
+ADGO Season 13,Regular Season,N/A,Peacock C4,Win,Shail Patel,ADGOS13G1.csv
+ADGO Season 13,Regular Season,N/A,Houston Benchwarmers,Win,Avinash Peterraj,ADGOS13G2.csv
+ADGO Season 13,Regular Season,N/A,Katy Ravens,Win,Garv Chaudhary,ADGOS13G3.csv
+Fall 2023,Playoff,Semi Final,Bth,Win,Nitesh Kosuri,Fall2023SF.csv
+Fall 2023,Regular Season,N/A,HEC,Win,Abu Siddiq,Fall2023G1.csv
+Fall 2023,Regular Season,N/A,Bth,Win,Sadesh Chandana,Fall2023G2.csv
+Fall 2023,Regular Season,N/A,Katy Ravens,Win,Abu Siddiq,Fall2023G3.csv
+Fall 2023,Regular Season,N/A,Wolfpack Icons,Win,Pranav Reddy,Fall2023G4.csv
+Fall 2023,Regular Season,N/A,Stallions,Win,Garv Chaudhary,Fall2023G5.csv
+Fall 2023,Regular Season,N/A,Champion CC,Win,Abu Siddiq,Fall2023G7.csv
+Fall 2024,Playoff,Quarter Final,Bcc Legends,Win,Sohan Matam,Fall2024QF.csv
+Fall 2024,Playoff,Semi Final,Houston Benchwarmers,Win,Govardhan Kandula,Fall2024SF.csv
+Fall 2024,Regular Season,N/A,Houston Benchwarmers,Win,Manjinder Singh,Fall2024G1.csv
+Fall 2024,Regular Season,N/A,Champion CC,Win,Jagdish Prajapati,Fall2024G2.csv
+Fall 2024,Regular Season,N/A,Downtown Dynamitz,Win,Garv Chaudhary,Fall2024G3.csv
+Fall 2024,Regular Season,N/A,Bcc Legends,Win,Ravi Kishore Bobburi,Fall2024G4.csv
+Fall 2024,Regular Season,N/A,Blue Star,Win,Srinivasarao Kandubothula (srk),Fall2024G6.csv
+Fall 2025,Playoff,Final,Hashtag Indians,Win,Garv Chaudhary,Fall2025Finals.csv
+Fall 2025,Playoff,Quarter Final,QHRS,Win,Tanmay Shah,Fall2025QF.csv
+Fall 2025,Playoff,Semi Final,Falcons XI,Win,Avinash Peterraj,Fall2025SF.csv
+Fall 2025,Regular Season,N/A,Champion CC,Win,Arun Anthony,Fall2025G1.csv
+Fall 2025,Regular Season,N/A,BTAMU,Win,Aarnav Patel,Fall2025G2.csv
+Fall 2025,Regular Season,N/A,OG'S,Win,Garv Chaudhary,Fall2025G3.csv
+Fall 2025,Regular Season,N/A,Bth,Win,Emilio Serralde,Fall2025G4.csv
+Fall 2025,Regular Season,N/A,Rowdy Boys,Win,Subramanya Upadhya,Fall2025G6.csv
+Practice League,Practice,N/A,Bth,Win,Shayaan Saad,PracticeGame3.csv
+Practice League,Practice,N/A,Bth,Win,Chirag Gandhi,PracticeGame4.csv
+Practice League,Practice,N/A,Bcc Legends,Win,Garv Chaudhary,PracticeGame5.csv
+Practice League,Practice,N/A,Bth,Win,Aditya Dade,PracticeGame6.csv
+Spring 2023,Regular Season,N/A,Katy Ravens,Win,Ravi Kishore Bobburi,Spring2023G1.csv
+Spring 2023,Regular Season,N/A,Downtown Dynamitz,Win,Abu Siddiq,Spring2023G2.csv
+Spring 2023,Regular Season,N/A,Bcc Legends,Win,Nitesh Kosuri,Spring2023G6.csv
+Spring 2024,Playoff,Quarter Final,Houston Scorpions,Win,Garv Chaudhary,Spring2024QF.csv
+Spring 2024,Regular Season,N/A,Downtown Dynamitz,Win,Nitesh Kosuri,Spring2024G1.csv
+Spring 2024,Regular Season,N/A,BTAMU,Win,Subramanya Upadhya,Spring2024G2.csv
+Spring 2024,Regular Season,N/A,Just In Case,Win,Gagan Nayakwadi,Spring2024G3.csv
+Spring 2024,Regular Season,N/A,Rowdy Boys,Win,Gagan Nayakwadi,Spring2024G5.csv
+Spring 2025,Playoff,Quarter Final,Falcons XI,Win,Srinivasarao Kandubothula (srk),Spring2025QF.csv
+Spring 2025,Regular Season,N/A,Javelinas-genx,Win,Jeeva Chinnusamy,Spring2025G1.csv
+Spring 2025,Regular Season,N/A,Houston Scorpions,Win,Roshaka Rajapaksha,Spring2025G2.csv
+Spring 2025,Regular Season,N/A,QHRS,Win,Rajesh Nadipalli,Spring2025G4.csv
+Spring 2025,Regular Season,N/A,Downtown Dynamitz,Win,Abu Siddiq,Spring2025G5.csv
+Spring 2025,Regular Season,N/A,Houston Benchwarmers,Win,Rajesh Nadipalli,Spring2025G6.csv
+Spring 2025,Regular Season,N/A,The Legends,Win,Garv Chaudhary,Spring2025G7.csv
+Spring 2026,Playoff,Final,Houston Scorpions,Win,Garv Chaudhary,Spring2026Finals.csv
+Spring 2026,Playoff,Quarter Final,Stallions,Win,Avinash Peterraj,Spring2026QF.csv
+Spring 2026,Playoff,Semi Final,Falcons XI,Win,Aarnav Patel,Spring2026SF.csv
+Spring 2026,Regular Season,N/A,Houston Benchwarmers,Win,Vamsi Kommalapati,Spring2026G1.csv
+Spring 2026,Regular Season,N/A,Javelinas-genx,Win,Shail Patel,Spring2026G2.csv
+Spring 2026,Regular Season,N/A,OG'S,Win,Nagul Sharif Shaik,Spring2026G3.csv
+Spring 2026,Regular Season,N/A,QHRS,Win,Roshaka Rajapaksha,Spring2026G6.csv
+Summer 2024,Playoff,Quarter Final,Wolfpack Icons,Win,Gaurav Mogane,Summer2024QF.csv
+Summer 2024,Playoff,Semi Final,Rowdy Boys,Win,Sohan Matam,Summer2024SF.csv
+Summer 2024,Regular Season,N/A,Bth,Win,Nishant Padhiar,Summer2024G2.csv
+Summer 2024,Regular Season,N/A,Downtown Dynamitz,Win,Uday Chaudhary,Summer2024G4.csv
+Summer 2024,Regular Season,N/A,Just In Case,Win,Sai Kiran Kollarapu,Summer2024G5.csv
+Summer 2025,Playoff,Final,Rowdy Boys,Win,Aneesh Vr,Summer2025Finals.csv
+Summer 2025,Playoff,Quarter Final,Bth,Win,Shail Patel,Summer2025QF.csv
+Summer 2025,Playoff,Semi Final,Champion CC,Win,Bernard Seimon,Summer2025SF.csv
+Summer 2025,Regular Season,N/A,Bcc Legends,Win,Shiva Prasad,Summer2025G1.csv
+Summer 2025,Regular Season,N/A,Houston Titans,Win,Avinash Peterraj,Summer2025G2.csv
+Summer 2025,Regular Season,N/A,Houston Scorpions,Win,Roshaka Rajapaksha,Summer2025G3.csv
+Summer 2025,Regular Season,N/A,Stallions,Win,Sohan Matam,Summer2025G4.csv
+Summer 2025,Regular Season,N/A,BTAMU,Win,Shail Patel,Summer2025G5.csv
+Summer 2025,Regular Season,N/A,Downtown Dynamitz,Win,Shail Patel,Summer2025G6.csv
+Summer 2026,Regular Season,N/A,Javelinas-genx,Win,Harish Pugalenthi,Summer2026G2.csv
+Summer 2026,Regular Season,N/A,Houston Titans,Win,Garv Chaudhary,Summer2026G3.csv
+Summer 2026,Regular Season,N/A,Bengal Tigers Of Houston,Win,Garv Chaudhary,Summer2026G5.csv
+Summer 2026,Regular Season,N/A,Stallions,Win,Shail Patel,Summer2026G6.csv

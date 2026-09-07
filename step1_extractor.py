@@ -191,7 +191,7 @@ all_fielding_dfs = []
 team_stats_list = []
 motm_list = []
 
-search_path = os.path.join("data", "**", "*.csv")
+search_path = os.path.join("Data", "**", "*.csv")
 all_files = glob.glob(search_path, recursive=True)
 
 for file in all_files:
@@ -199,16 +199,22 @@ for file in all_files:
     if "league awards" in file_path_lower:
         continue
         
-    season_match = re.search(r'(spring|fall|summer)\s*20\d{2}|20\d{2}\s*(spring|fall|summer)', file_path_lower)
-    if season_match:
-        season_str = season_match.group(0)
-        word = re.search(r'[a-z]+', season_str).group(0).title()
-        year = re.search(r'\d{4}', season_str).group(0)
-        season = f"{word} {year}"
-    elif "practice" in file_path_lower:
-        season = "Practice League"
+    # Franchise & League Categorization Logic
+    if "adgo" in file_path_lower:
+        season = "ADGO Season 13"
+    elif "bthcc" in file_path_lower:
+        season = "BTHCC"
     else:
-        season = "Unknown"
+        season_match = re.search(r'(spring|fall|summer)\s*20\d{2}|20\d{2}\s*(spring|fall|summer)', file_path_lower)
+        if season_match:
+            season_str = season_match.group(0)
+            word = re.search(r'[a-z]+', season_str).group(0).title()
+            year = re.search(r'\d{4}', season_str).group(0)
+            season = f"{word} {year}"
+        elif "practice" in file_path_lower:
+            season = "Practice League"
+        else:
+            season = "Unknown"
             
     match_type = "Practice" if "practice" in file_path_lower else "Regular Season"
     if "playoff" in file_path_lower or "sf" in file_path_lower or "qf" in file_path_lower or "finals" in file_path_lower:
@@ -252,11 +258,9 @@ for file in all_files:
     try:
         bat_df = extract_clean_data(file, 'Batting')
         if bat_df is not None and not bat_df.empty:
-            # Drop unnecessary columns
             cols_to_drop = [c for c in bat_df.columns if str(c).lower() in ['fielder', 'bowler', 'nan', 'none', '']]
             bat_df = bat_df.drop(columns=cols_to_drop, errors='ignore')
             
-            # --- CALCULATE BATTING POSITION ---
             batting_positions = []
             batting_order = 1
             for _, row in bat_df.iterrows():
@@ -270,7 +274,6 @@ for file in all_files:
                         batting_positions.append(f'{batting_order - 2} Down')
                     batting_order += 1
             bat_df['Batting_Position'] = batting_positions
-            # ----------------------------------
             
             bat_df['Season'] = season
             bat_df['Match_Type'] = match_type
@@ -327,55 +330,94 @@ if all_fielding_dfs:
     pd.concat(all_fielding_dfs, ignore_index=True).to_csv("data_clean/cypress_warriorz_master_fielding.csv", index=False)
     print("Fielding data saved!")
 
+# ==========================================
+# NEW: BULLETPROOF LEAGUE AWARDS PARSING
+# ==========================================
+awards_files = glob.glob(os.path.join("Data", "League Awards", "*.xlsx"))
+if awards_files:
+    print(f"Parsing League Awards from {awards_files[0]}...")
+    # Read without headers to easily find the true header row
+    df_awards_raw = pd.read_excel(awards_files[0], header=None)
+    
+    # Locate the row that actually contains exactly 'Season', 'Player Name', or 'Award Type'
+    header_row_idx = df_awards_raw[df_awards_raw.apply(lambda r: r.astype(str).str.strip().str.lower().isin(['season', 'player', 'award type']).any(), axis=1)].index
+    
+    if len(header_row_idx) > 0:
+        df_awards = df_awards_raw.iloc[header_row_idx[0]+1:].copy()
+        df_awards.columns = df_awards_raw.iloc[header_row_idx[0]]
+        
+        # Drop completely empty rows
+        df_awards = df_awards.dropna(how='all')
+        
+        # Standardize columns
+        df_awards.columns = [str(c).title().replace(' ', '_').strip() for c in df_awards.columns]
+        rename_map = {'Player': 'Player_Name', 'Award': 'Award_Type', 'Player_Name': 'Player_Name', 'Award_Type': 'Award_Type'}
+        df_awards.rename(columns=rename_map, inplace=True)
+        
+        # Keep only the columns that exist in the database to avoid Neon crashing
+        db_cols = ['Season', 'Award_Type', 'Player_Name', 'Stats', 'Opponent', 'Occasion']
+        existing_cols = [c for c in db_cols if c in df_awards.columns]
+        
+        if existing_cols:
+            df_awards = df_awards[existing_cols]
+            df_awards.to_csv("data_clean/cypress_warriorz_league_awards.csv", index=False)
+            print("League Awards saved!")
+        else:
+            print("⚠️ Warning: Could not find matching columns for League Awards.")
+
 def build_dim_player():
     full_df = pd.read_csv("Data/Roster/fullroster.csv")
     prac_df = pd.read_csv("Data/Roster/practiceleagueroster.csv")
 
-    # 2. Rename columns to match the target database schema
+    # Make all column names UPPERCASE and strip spaces to make it bulletproof
+    full_df.columns = [str(c).strip().upper() for c in full_df.columns]
+    prac_df.columns = [str(c).strip().upper() for c in prac_df.columns]
+
+    # Safety Check: If it still can't find it, tell us exactly what columns it sees
+    if 'IS ACTIVE IN BTHCC' not in full_df.columns:
+        print("\n❌ ERROR: Could not find 'IS ACTIVE IN BTHCC' in fullroster.csv.")
+        print(f"Columns actually found in the file: {full_df.columns.tolist()}")
+        print("💡 FIX: If the columns are missing above, you likely edited the file in Excel but forgot to 'Save As -> CSV'. Please re-save the file as a CSV and overwrite Data/Roster/fullroster.csv.\n")
+        exit()
+
     full_df = full_df.rename(columns={"PLAYER": "PLAYER_NAME"})
 
-    # 3. Convert 'Is Active' ('Y'/'N') to boolean True/False
-    full_df['IS_ACTIVE'] = full_df['Is Active'].apply(
+    # --- NEW LOGIC FOR DYNAMIC BTHCC & ADGO COLUMNS ---
+    full_df['IS_ACTIVE_BTHCC'] = full_df['IS ACTIVE IN BTHCC'].apply(
         lambda x: True if str(x).strip().upper() == 'Y' else False
     )
-    full_df = full_df.drop(columns=['Is Active'])
+    full_df['IS_ACTIVE_ADGO'] = full_df['IS ACTIVE IN ADGO'].apply(
+        lambda x: True if str(x).strip().upper() == 'Y' else False
+    )
+    
+    # Master IS_ACTIVE flag (True if active in AT LEAST one league)
+    full_df['IS_ACTIVE'] = full_df['IS_ACTIVE_BTHCC'] | full_df['IS_ACTIVE_ADGO']
+    
+    # Drop raw string columns to keep db clean
+    full_df = full_df.drop(columns=['IS ACTIVE IN BTHCC', 'IS ACTIVE IN ADGO'], errors='ignore')
 
-    # 4. Handle NaN values to prevent errors
     full_df['PLAYER_NAME'] = full_df['PLAYER_NAME'].fillna("")
     prac_df['PLAYER'] = prac_df['PLAYER'].fillna("")
 
-    # 5. Create the IS_PRACTICE_LEAGUE flag
     practice_players = prac_df['PLAYER'].str.strip().tolist()
     full_df['IS_PRACTICE_LEAGUE'] = full_df['PLAYER_NAME'].str.strip().isin(practice_players)
 
-    # 6. Generate the Fielding Alias (Includes middle names, no periods)
     def generate_fielding_alias(full_name):
         if not full_name:
-            return "" # Handles empty rows
-            
-        # .split() automatically handles multiple spaces and removes them
+            return ""
         name_parts = str(full_name).strip().split()
         if not name_parts:
             return ""
-        
-        # If there's only one name listed
         if len(name_parts) == 1:
             return name_parts[0]
-            
-        # Join all names except the last one (First + Middle), then add the first letter of the last name
         first_and_middle = " ".join(name_parts[:-1])
         last_initial = name_parts[-1][0]
         return f"{first_and_middle} {last_initial}"
 
     full_df['FIELDING_ALIAS'] = full_df['PLAYER_NAME'].apply(generate_fielding_alias)
-
-    # 7. Generate the sequential PLAYER_ID (1 to N)
     full_df.insert(0, 'PLAYER_ID', range(1, len(full_df) + 1))
-
-    # 8. Save to CSV
     full_df.to_csv("DIM_PLAYER.csv", index=False)
     print("Transformation complete. Saved to DIM_PLAYER.csv!")
-    
     return full_df
 
 build_dim_player()
