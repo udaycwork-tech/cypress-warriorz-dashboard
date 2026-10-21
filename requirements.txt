@@ -9,3 +9,4 @@ scikit-learn
 psycopg2-binary
 SQLAlchemy
 openpyxl
+psycopg[binary]>=3.1.0
